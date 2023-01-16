@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>http://InhwanCho.github.io/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/11/17/Blogs_folder/2023-01-16-frontmattertest/</loc>
+        <lastmod>2023-01-16T04:01:58.792Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/16/Blogs_folder/2023-01-16-customizeing/</loc>
+        <lastmod>2023-01-15T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/15/Study_folder/OpneCV/2023-01-15-webcam-in-colab/</loc>
+        <lastmod>2023-01-14T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/13/Blogs_folder/2023-01-13-blogmoving/</loc>
+        <lastmod>2023-01-12T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/18/Error_fix/2022-12-18-error-logs/</loc>
+        <lastmod>2023-01-12T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</loc>
+        <lastmod>2023-01-10T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-shape/</loc>
+        <lastmod>2023-01-10T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</loc>
+        <lastmod>2023-01-10T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</loc>
+        <lastmod>2023-01-10T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/23/Portfolio/2022-12-23-img-project/</loc>
+        <lastmod>2023-01-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/10/Study_folder/TensorFlow/2023-01-10-XAI/</loc>
+        <lastmod>2023-01-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/09/Study_folder/Pytorch/2023-01-09-model-info/</loc>
+        <lastmod>2023-01-08T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/30/Personal_folder/for_project/2022-12-29-captioning_v2/</loc>
+        <lastmod>2023-01-07T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/NLP(Natural_Language_Processing)/2023-01-08-attention-imp/</loc>
+        <lastmod>2023-01-07T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</loc>
+        <lastmod>2023-01-07T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</loc>
+        <lastmod>2023-01-07T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/07/Study_folder/Pytorch/2023-01-07-nn.Embedding/</loc>
+        <lastmod>2023-01-06T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/07/Study_folder/Pytorch/2023-01-07-tril/</loc>
+        <lastmod>2023-01-06T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/06/Study_folder/Pytorch/2023-01-06-squeeze/</loc>
+        <lastmod>2023-01-05T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/19/Blogs_folder/2022-11-19-markdown/</loc>
+        <lastmod>2023-01-04T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/05/Study_folder/Basic_study/2023-01-05-einsum/</loc>
+        <lastmod>2023-01-04T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/05/Study_folder/Basic_study/2023-01-05-assert/</loc>
+        <lastmod>2023-01-04T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/31/Study_folder/NLP(Natural_Language_Processing)/2022-12-31-nlp-model-history/</loc>
+        <lastmod>2023-01-04T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/05/Study_folder/NLP(Natural_Language_Processing)/2023-01-05-attention/</loc>
+        <lastmod>2023-01-04T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/04/Study_folder/NLP(Natural_Language_Processing)/2023-01-04-SBERT-nli/</loc>
+        <lastmod>2023-01-03T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/03/Blogs_folder/2023-01-03-favicon/</loc>
+        <lastmod>2023-01-02T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/02/Blogs_folder/2023-01-02-gitbadges/</loc>
+        <lastmod>2023-01-01T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/01/02/Study_folder/Pytorch/2023-01-02-dim-shape/</loc>
+        <lastmod>2023-01-01T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/30/Blogs_folder/2022-12-30-blog-info/</loc>
+        <lastmod>2022-12-29T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/30/Study_folder/NLP(Natural_Language_Processing)/2022-12-30-int-encoding/</loc>
+        <lastmod>2022-12-29T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/30/Study_folder/Pytorch/2022-12-30-torch-basic/</loc>
+        <lastmod>2022-12-29T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Error_fix/2022-12-10-VScode(input_Korean)/</loc>
+        <lastmod>2022-12-28T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/29/Mac_Fundamental_Concept/2022-12-29-editor-setting/</loc>
+        <lastmod>2022-12-28T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/29/Personal_folder/for_project/2022-12-29-captioning_v1/</loc>
+        <lastmod>2022-12-28T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Basic_study/2022-12-12-os_module/</loc>
+        <lastmod>2022-12-28T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/27/Mac_Fundamental_Concept/2022-12-27-wget/</loc>
+        <lastmod>2022-12-26T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/24/Study_folder/Pandas,%20Numpy/2022-12-24-np-transpose/</loc>
+        <lastmod>2022-12-23T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/17/Portfolio/2022-12-17-%08img-cl-swin/</loc>
+        <lastmod>2022-12-22T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/19/Portfolio/2022-12-19-img-webcrawling/</loc>
+        <lastmod>2022-12-22T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/23/Portfolio/2022-12-23-img-delete/</loc>
+        <lastmod>2022-12-22T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/22/Study_folder/Basic_study/2022-12-22-fomatting/</loc>
+        <lastmod>2022-12-22T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/22/Study_folder/TensorFlow/2022-12-22-img-finetun/</loc>
+        <lastmod>2022-12-21T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/21/Study_folder/TensorFlow/2022-12-21-img-resnetv2/</loc>
+        <lastmod>2022-12-20T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/21/Study_folder/TensorFlow/2022-12-21-Auto-encoder(AE)/</loc>
+        <lastmod>2022-12-20T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/20/Study_folder/DL(Deep_Learning)/2022-12-20-loss/</loc>
+        <lastmod>2022-12-19T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/20/Study_folder/TensorFlow/2022-12-20-DCGAN/</loc>
+        <lastmod>2022-12-19T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/19/Study_folder/Pytorch/2022-12-19-methods-of-torch/</loc>
+        <lastmod>2022-12-18T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-19-escape-sequence/</loc>
+        <lastmod>2022-12-17T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-18-Pillow/</loc>
+        <lastmod>2022-12-17T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/17/Study_folder/Basic_study/2022-12-17-list-sum/</loc>
+        <lastmod>2022-12-16T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/Basic_study/2022-12-15-glob/</loc>
+        <lastmod>2022-12-14T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/TensorFlow/2022-12-15-img-generator/</loc>
+        <lastmod>2022-12-14T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/Pytorch/2022-12-15-dif-tran-alb/</loc>
+        <lastmod>2022-12-14T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/22/Mac_Fundamental_Concept/2022-11-22-mac-command/</loc>
+        <lastmod>2022-12-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/14/Mac_Fundamental_Concept/2022-12-14-Mac-basic/</loc>
+        <lastmod>2022-12-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/03/Study_folder/Basic_study/2022-12-03-ZipFile/</loc>
+        <lastmod>2022-12-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/14/Study_folder/Basic_study/2022-12-14-magic-command/</loc>
+        <lastmod>2022-12-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/14/Study_folder/Pandas,%20Numpy/2022-12-15-numpy-axis/</loc>
+        <lastmod>2022-12-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Basic_study/2022-12-12-iter/</loc>
+        <lastmod>2022-12-11T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/TensorFlow/2022-12-12-deep_CNN/</loc>
+        <lastmod>2022-12-11T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Pytorch/2022-12-12-nn(CNN)/</loc>
+        <lastmod>2022-12-11T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/11/Blogs_folder/2022-12-11-Git-info/</loc>
+        <lastmod>2022-12-10T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/11/Blogs_folder/2022-12-11-Git-command/</loc>
+        <lastmod>2022-12-10T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/22/Mac_Fundamental_Concept/2022-11-22-termianl-tips/</loc>
+        <lastmod>2022-12-10T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/19/Error_fix/2022-11-19-bloging_errors/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/07/Mac_Fundamental_Concept/2022-12-07-PATH(shell)/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Mac_Fundamental_Concept/2022-12-10-conda-env/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-SBERT-chatbot/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-BERT_fine_intro/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-KoGPT2_chatbot/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/Pytorch/2022-12-10-Dataloader/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/Pytorch/2022-12-10-pytorch-GPU/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/02/Study_folder/Pytorch/2022-12-02-pytorch-Dataset(class)/</loc>
+        <lastmod>2022-12-04T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/03/Study_folder/Pytorch/2022-12-03-nn.Module(class)/</loc>
+        <lastmod>2022-12-03T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-Symbolic-Link/</loc>
+        <lastmod>2022-12-02T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/03/Error_fix/2022-12-03-pytorch-installerror/</loc>
+        <lastmod>2022-12-02T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/30/Study_folder/Basic_study/2022-11-30-Class/</loc>
+        <lastmod>2022-11-30T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/01/Study_folder/DL(Deep_Learning)/2022-12-01-Overfitting/</loc>
+        <lastmod>2022-11-30T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/01/Study_folder/DL(Deep_Learning)/2022-12-03-callbacks/</loc>
+        <lastmod>2022-11-30T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/30/Study_folder/Basic_study/2022-11-30-save-list(pickle)/</loc>
+        <lastmod>2022-11-29T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/27/Study_folder/Basic_study/2022-11-27-mini-project-first/</loc>
+        <lastmod>2022-11-26T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/26/Study_folder/Pandas,%20Numpy/2022-11-26-pd.pivot_table()/</loc>
+        <lastmod>2022-11-26T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/25/Study_folder/Pandas,%20Numpy/2022-11-25-cut()-qcut()/</loc>
+        <lastmod>2022-11-24T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/24/Colab_folder/2022-11-23-setting-tap/</loc>
+        <lastmod>2022-11-23T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/23/Study_folder/Basic_study/2022-11-23-globals(),eval()/</loc>
+        <lastmod>2022-11-22T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-konlpy-install/</loc>
+        <lastmod>2022-11-21T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-nltk-download/</loc>
+        <lastmod>2022-11-21T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/22/Study_folder/NLP(Natural_Language_Processing)/2022-11-22-NLP/</loc>
+        <lastmod>2022-11-21T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/22/Study_folder/Pandas,%20Numpy/2022-11-22-file-encoding/</loc>
+        <lastmod>2022-11-21T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-get_dummies/</loc>
+        <lastmod>2022-11-20T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-Scaling/</loc>
+        <lastmod>2022-11-20T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-OneHotEncoder/</loc>
+        <lastmod>2022-11-20T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/20/Mac_Fundamental_Concept/2022-11-20-jupyter-command/</loc>
+        <lastmod>2022-11-19T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/20/Mac_Fundamental_Concept/2022-11-20-vim-command/</loc>
+        <lastmod>2022-11-19T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
+        <lastmod>2022-11-19T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-sample-codes/</loc>
+        <lastmod>2022-11-19T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->
