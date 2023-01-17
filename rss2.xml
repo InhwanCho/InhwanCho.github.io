@@ -131,33 +131,6 @@
     </item>
     
     <item>
-      <title>OpenCV에 관한 정보</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;OpenCV&quot;&gt;&lt;a href=&quot;#OpenCV&quot; class=&quot;headerlink&quot; title=&quot;OpenCV&quot;&gt;&lt;/a&gt;OpenCV&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (&lt;code&gt;x&lt;/cod</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul><li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p><ul><li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li></ul></li><li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p><ul><li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Study-OpenCV/">Study,OpenCV</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>OpenCV 이미지 변환</title>
       <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</link>
       <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</guid>
@@ -207,6 +180,33 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-shape/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>OpenCV에 관한 정보</title>
+      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
+      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
+      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;OpenCV&quot;&gt;&lt;a href=&quot;#OpenCV&quot; class=&quot;headerlink&quot; title=&quot;OpenCV&quot;&gt;&lt;/a&gt;OpenCV&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (&lt;code&gt;x&lt;/cod</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul><li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p><ul><li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li></ul></li><li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p><ul><li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Study-OpenCV/">Study,OpenCV</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
       
     </item>
     
