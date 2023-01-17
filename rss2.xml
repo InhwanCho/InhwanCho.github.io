@@ -9,37 +9,8 @@
     <atom:link href="http://inhwancho.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I&#39;m Learning ML/DL</description>
-    <pubDate>Mon, 16 Jan 2023 04:01:58 GMT</pubDate>
+    <pubDate>Sun, 15 Jan 2023 15:00:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>testing post</title>
-      <link>http://inhwancho.github.io/2023/11/17/Blogs_folder/2023-01-16-frontmattertest/</link>
-      <guid>http://inhwancho.github.io/2023/11/17/Blogs_folder/2023-01-16-frontmattertest/</guid>
-      <pubDate>Thu, 16 Nov 2023 15:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;테스트-중입니다&quot;&gt;&lt;a href=&quot;#테스트-중입니다&quot; class=&quot;headerlink&quot; title=&quot;테스트 중입니다&quot;&gt;&lt;/a&gt;테스트 중입니다&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;testing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highli</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="테스트-중입니다"><a href="#테스트-중입니다" class="headerlink" title="테스트 중입니다"></a>테스트 중입니다</h2><ul><li>testing</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">팁을 드리자면, scaffolds\post.md 파일에</span><br><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">widgets:</span><br><span class="line">  - type: toc</span><br><span class="line">    position: left</span><br><span class="line">sidebar:</span><br><span class="line">  left:</span><br><span class="line">    sticky: true</span><br><span class="line">toc: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure><ul><li>사이드바 제거</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Project</span><br><span class="line">widgets: null</span><br><span class="line">comment: false</span><br><span class="line">article:</span><br><span class="line">  - license: false</span><br><span class="line">--- </span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Blog/">Blog</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Blog/">Blog</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/11/17/Blogs_folder/2023-01-16-frontmattertest/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>Icarus 테마 커스터마이징</title>
@@ -558,6 +529,33 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/04/Study_folder/NLP(Natural_Language_Processing)/2023-01-04-SBERT-nli/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Github page 맨 위(탭) 아이콘(파비콘) 변경하기</title>
+      <link>http://inhwancho.github.io/2023/01/03/Blogs_folder/2023-01-03-favicon/</link>
+      <guid>http://inhwancho.github.io/2023/01/03/Blogs_folder/2023-01-03-favicon/</guid>
+      <pubDate>Mon, 02 Jan 2023 15:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;깃허브-블로그-파비콘-변경하기&quot;&gt;&lt;a href=&quot;#깃허브-블로그-파비콘-변경하기&quot; class=&quot;headerlink&quot; title=&quot;깃허브 블로그 파비콘 변경하기&quot;&gt;&lt;/a&gt;깃허브 블로그 파비콘 변경하기&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;변경을 하고 싶</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="깃허브-블로그-파비콘-변경하기"><a href="#깃허브-블로그-파비콘-변경하기" class="headerlink" title="깃허브 블로그 파비콘 변경하기"></a>깃허브 블로그 파비콘 변경하기</h2><ol><li>변경을 하고 싶은 아이콘 이미지를 다운받는다.</li><li><code>_config.yml</code>파일의 favicon 경로를 살펴본다.</li><li><a href="https://favicon.io/">https://favicon.io/</a>이 사이트 <code>png-&gt;ico</code>를 눌러서 convert한다.</li><li>unzip하고 <code>site.webmanifest</code>파일을 제거 하고 6개의 이미지 파일을 yml파일의 경로에다 옮겨준다.</li><li>변경되는데 시간이 오래 걸립니다.</li></ol>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Git/">Git</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Git/">Git</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/03/Blogs_folder/2023-01-03-favicon/#disqus_thread</comments>
       
     </item>
     
