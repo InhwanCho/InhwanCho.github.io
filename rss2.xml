@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="정면-얼굴-검출"><a href="#정면-얼굴-검출" class="headerlink" title="정면 얼굴 검출"></a>정면 얼굴 검출</h2><ul><li><code>haarcascade_frontalface_default.xml</code> 을 사용하여 검출하는 방법입니다.</li><li>이 파일은 다른 사람들이 이미 얼굴을 검출하는 학습을 해둔 파일이며 이를 이용하면 편하게 얼굴을 인식할 수 있습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">faceCascade = cv2.CascadeClassifier(<span class="string">&#x27;Resources/haarcascade_frontalface_default.xml&#x27;</span>)</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;Resources/lena.png&#x27;</span>)</span><br><span class="line">imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line">faces = faceCascade.detectMultiScale(imgGray,<span class="number">1.1</span>,<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (x,y,w,h) <span class="keyword">in</span> faces:</span><br><span class="line">    cv2.rectangle(img, (x,y), (x+w, y+h), (<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>), <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;result&#x27;</span>,img)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><img width="505" alt="얼굴 인식" src="https://user-images.githubusercontent.com/111936229/213099837-c577eb63-1dab-433f-8e14-d48ca4309471.png"><h4 id="코드-블럭-테스트11"><a href="#코드-블럭-테스트11" class="headerlink" title="코드 블럭 테스트11"></a>코드 블럭 테스트11</h4><figure class="highlight plaintext"><figcaption><span>_.compact 112Underscore.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">안녕</span><br><span class="line">_.compact([0, 1, false, 2, &#x27;&#x27;, 3]);</span><br><span class="line">=&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="정면-얼굴-검출"><a href="#정면-얼굴-검출" class="headerlink" title="정면 얼굴 검출"></a>정면 얼굴 검출</h2><ul><li><code>haarcascade_frontalface_default.xml</code> 을 사용하여 검출하는 방법입니다.</li><li>이 파일은 다른 사람들이 이미 얼굴을 검출하는 학습을 해둔 파일이며 이를 이용하면 편하게 얼굴을 인식할 수 있습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">faceCascade = cv2.CascadeClassifier(<span class="string">&#x27;Resources/haarcascade_frontalface_default.xml&#x27;</span>)</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;Resources/lena.png&#x27;</span>)</span><br><span class="line">imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line">faces = faceCascade.detectMultiScale(imgGray,<span class="number">1.1</span>,<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (x,y,w,h) <span class="keyword">in</span> faces:</span><br><span class="line">    cv2.rectangle(img, (x,y), (x+w, y+h), (<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>), <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;result&#x27;</span>,img)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><img width="505" alt="얼굴 인식" src="https://user-images.githubusercontent.com/111936229/213099837-c577eb63-1dab-433f-8e14-d48ca4309471.png"><h4 id="코드-블럭-테스트11"><a href="#코드-블럭-테스트11" class="headerlink" title="코드 블럭 테스트11"></a>코드 블럭 테스트11</h4><figure class="highlight excel"><figcaption><span>_.compact 112Underscore.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">안녕</span><br><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, &#x27;&#x27;, <span class="number">3</span>]);</span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
@@ -206,6 +206,32 @@
     </item>
     
     <item>
+      <title>OpenCV 이미지 변환</title>
+      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</link>
+      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</guid>
+      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;Grayscale-GaussianBlur&quot;&gt;&lt;a href=&quot;#Grayscale-GaussianBlur&quot; class=&quot;headerlink&quot; title=&quot;Grayscale, GaussianBlur&quot;&gt;&lt;/a&gt;Grayscale, Gaussian</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Grayscale-GaussianBlur"><a href="#Grayscale-GaussianBlur" class="headerlink" title="Grayscale, GaussianBlur"></a>Grayscale, GaussianBlur</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"><span class="comment"># 컬러 -&gt; 흑백으로 변환</span></span><br><span class="line">imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line"><span class="comment"># ksize == kernel size이므로 홀수만 사용 가능, sigmaX는 블러 정도라고 생각하면 편하며,</span></span><br><span class="line"><span class="comment"># 보통 -3~3사이의 값을 사용</span></span><br><span class="line">imgBlur = cv2.GaussianBlur(imgGray, ksize=(<span class="number">7</span>,<span class="number">7</span>),sigmaX=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,imgGray)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output2&#x27;</span>,imgBlur)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><ul><li>결과 imgGray</li></ul><img width="1020" alt="스크린샷 2023-01-11 오후 1 15 37" src="https://user-images.githubusercontent.com/111936229/211717325-d4d896f0-630b-4450-8977-a492fa691bd5.png"><ul><li>결과 imgBlur</li></ul><img width="1014" alt="스크린샷 2023-01-11 오후 1 25 13" src="https://user-images.githubusercontent.com/111936229/211717481-1721d754-f9f4-4ef3-bf6d-ea4e4b041f3a.png"><h2 id="Canny-Dialation"><a href="#Canny-Dialation" class="headerlink" title="Canny, Dialation"></a>Canny, Dialation</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line">imgCanny = cv2.Canny(img,<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>), np.uint8)</span><br><span class="line"><span class="comment"># iterations에 높은 수를 넣으면 윤곽선이 더 커집니다.</span></span><br><span class="line">imgDialation = cv2.dilate(imgCanny, kernel=kernel,iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">imgEroded = cv2.erode(imgDialation, kernel=kernel, iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output3&#x27;</span>,imgCanny)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output4&#x27;</span>,imgDialation)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output5&#x27;</span>,imgEroded)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><ul><li>결과 imgCanny</li></ul><img width="1019" alt="스크린샷 2023-01-11 오후 1 32 21" src="https://user-images.githubusercontent.com/111936229/211718228-2469f803-60dd-4930-bf20-7c1111fa6378.png"><ul><li>결과 imgDialation</li></ul><img width="1021" alt="스크린샷 2023-01-11 오후 1 37 22" src="https://user-images.githubusercontent.com/111936229/211718825-08992f1e-f210-491f-8b42-14c337b9c85c.png"><ul><li>결과 imgEroded</li></ul><img width="1023" alt="스크린샷 2023-01-11 오후 1 42 18" src="https://user-images.githubusercontent.com/111936229/211719388-c8fa40b9-a489-44b0-810d-bb201e9ed1fb.png">]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Study-OpenCV/">Study,OpenCV</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>OpenCV에 관한 정보</title>
       <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
       <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
@@ -229,32 +255,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>OpenCV 이미지 변환</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;Grayscale-GaussianBlur&quot;&gt;&lt;a href=&quot;#Grayscale-GaussianBlur&quot; class=&quot;headerlink&quot; title=&quot;Grayscale, GaussianBlur&quot;&gt;&lt;/a&gt;Grayscale, Gaussian</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="Grayscale-GaussianBlur"><a href="#Grayscale-GaussianBlur" class="headerlink" title="Grayscale, GaussianBlur"></a>Grayscale, GaussianBlur</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"><span class="comment"># 컬러 -&gt; 흑백으로 변환</span></span><br><span class="line">imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line"><span class="comment"># ksize == kernel size이므로 홀수만 사용 가능, sigmaX는 블러 정도라고 생각하면 편하며,</span></span><br><span class="line"><span class="comment"># 보통 -3~3사이의 값을 사용</span></span><br><span class="line">imgBlur = cv2.GaussianBlur(imgGray, ksize=(<span class="number">7</span>,<span class="number">7</span>),sigmaX=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,imgGray)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output2&#x27;</span>,imgBlur)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><ul><li>결과 imgGray</li></ul><img width="1020" alt="스크린샷 2023-01-11 오후 1 15 37" src="https://user-images.githubusercontent.com/111936229/211717325-d4d896f0-630b-4450-8977-a492fa691bd5.png"><ul><li>결과 imgBlur</li></ul><img width="1014" alt="스크린샷 2023-01-11 오후 1 25 13" src="https://user-images.githubusercontent.com/111936229/211717481-1721d754-f9f4-4ef3-bf6d-ea4e4b041f3a.png"><h2 id="Canny-Dialation"><a href="#Canny-Dialation" class="headerlink" title="Canny, Dialation"></a>Canny, Dialation</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line">imgCanny = cv2.Canny(img,<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>), np.uint8)</span><br><span class="line"><span class="comment"># iterations에 높은 수를 넣으면 윤곽선이 더 커집니다.</span></span><br><span class="line">imgDialation = cv2.dilate(imgCanny, kernel=kernel,iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">imgEroded = cv2.erode(imgDialation, kernel=kernel, iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output3&#x27;</span>,imgCanny)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output4&#x27;</span>,imgDialation)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output5&#x27;</span>,imgEroded)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><ul><li>결과 imgCanny</li></ul><img width="1019" alt="스크린샷 2023-01-11 오후 1 32 21" src="https://user-images.githubusercontent.com/111936229/211718228-2469f803-60dd-4930-bf20-7c1111fa6378.png"><ul><li>결과 imgDialation</li></ul><img width="1021" alt="스크린샷 2023-01-11 오후 1 37 22" src="https://user-images.githubusercontent.com/111936229/211718825-08992f1e-f210-491f-8b42-14c337b9c85c.png"><ul><li>결과 imgEroded</li></ul><img width="1023" alt="스크린샷 2023-01-11 오후 1 42 18" src="https://user-images.githubusercontent.com/111936229/211719388-c8fa40b9-a489-44b0-810d-bb201e9ed1fb.png">]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Study-OpenCV/">Study,OpenCV</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/#disqus_thread</comments>
       
     </item>
     
@@ -365,32 +365,6 @@
     </item>
     
     <item>
-      <title>tf.cast()</title>
-      <link>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</link>
-      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</guid>
-      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;tf-cast-x-dtype-name-x3D-None&quot;&gt;&lt;a href=&quot;#tf-cast-x-dtype-name-x3D-None&quot; class=&quot;headerlink&quot; title=&quot;tf.cast(x, dtype, name&amp;#x3D;None)&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="tf-cast-x-dtype-name-x3D-None"><a href="#tf-cast-x-dtype-name-x3D-None" class="headerlink" title="tf.cast(x, dtype, name&#x3D;None)"></a>tf.cast(x, dtype, name&#x3D;None)</h2><blockquote><p>The operation casts x (in case of Tensor) or x.values (in case of SparseTensor or IndexedSlices) to dtype.<br><br>해석하자면 x값을 새로운 형태의 dtype으로 캐스팅한다는 의미입니다.{:.prompt-info}</p></blockquote><ul><li><p>부동 소수점형에서 정수형으로 바꾼 경우 소수점을 버린다.</p></li><li><p>Boolean으로 참조한 경우 True이면 1, False이면 0을 출력한다.</p></li><li><p>예시를 보면 이해가 될겁니다.</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x = tf.constant([<span class="number">1.8</span>, <span class="number">2.2</span>, <span class="number">3.3</span>], dtype=tf.float32)</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="comment"># tf.Tensor([1.8 2.2 3.3], shape=(3,), dtype=float32)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x, tf.int32)</span><br><span class="line"><span class="comment"># 출력 결과를 보시면 반올림, 내림이 아닌 소수점을 버립니다.</span></span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=int32, numpy=array([1, 2, 3], dtype=int32)&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x&gt;<span class="number">2</span>, tf.float32)</span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=float32, numpy=array([0., 1., 1.], dtype=float32)&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Deeplearning-Study-Tensorflow/">Deeplearning,Study,Tensorflow</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>torch를 boolean값으로 변경</title>
       <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
       <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
@@ -415,6 +389,32 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>tf.cast()</title>
+      <link>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</link>
+      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</guid>
+      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;tf-cast-x-dtype-name-x3D-None&quot;&gt;&lt;a href=&quot;#tf-cast-x-dtype-name-x3D-None&quot; class=&quot;headerlink&quot; title=&quot;tf.cast(x, dtype, name&amp;#x3D;None)&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="tf-cast-x-dtype-name-x3D-None"><a href="#tf-cast-x-dtype-name-x3D-None" class="headerlink" title="tf.cast(x, dtype, name&#x3D;None)"></a>tf.cast(x, dtype, name&#x3D;None)</h2><blockquote><p>The operation casts x (in case of Tensor) or x.values (in case of SparseTensor or IndexedSlices) to dtype.<br><br>해석하자면 x값을 새로운 형태의 dtype으로 캐스팅한다는 의미입니다.{:.prompt-info}</p></blockquote><ul><li><p>부동 소수점형에서 정수형으로 바꾼 경우 소수점을 버린다.</p></li><li><p>Boolean으로 참조한 경우 True이면 1, False이면 0을 출력한다.</p></li><li><p>예시를 보면 이해가 될겁니다.</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x = tf.constant([<span class="number">1.8</span>, <span class="number">2.2</span>, <span class="number">3.3</span>], dtype=tf.float32)</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="comment"># tf.Tensor([1.8 2.2 3.3], shape=(3,), dtype=float32)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x, tf.int32)</span><br><span class="line"><span class="comment"># 출력 결과를 보시면 반올림, 내림이 아닌 소수점을 버립니다.</span></span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=int32, numpy=array([1, 2, 3], dtype=int32)&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x&gt;<span class="number">2</span>, tf.float32)</span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=float32, numpy=array([0., 1., 1.], dtype=float32)&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Deeplearning-Study-Tensorflow/">Deeplearning,Study,Tensorflow</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
       
     </item>
     
