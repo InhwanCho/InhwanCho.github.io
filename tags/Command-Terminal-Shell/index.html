@@ -60,7 +60,49 @@
 <h3 id="중복-경로를-제거하고-싶다면"><a href="#중복-경로를-제거하고-싶다면" class="headerlink" title="중복 경로를 제거하고 싶다면"></a>중복 경로를 제거하고 싶다면</h3><ul>
 <li>아래 명령어 실행</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PATH=$(echo -n $PATH | awk -v RS=: &#x27;!($0 in a) &#123;a[$0]; printf(&quot;%s%s&quot;, length(a) &gt; 1 ? &quot;:&quot; : &quot;&quot;, $0)&#125;&#x27;)</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2022-11-21T15:00:00.000Z" title="2022. 11. 22. 오전 12:00:00">2022-11-22</time></span><span class="level-item">Updated&nbsp;<time datetime="2022-12-13T15:00:00.000Z" title="2022. 12. 14. 오전 12:00:00">2022-12-14</time></span><span class="level-item"><a class="link-muted" href="/categories/Command/">Command</a></span><span class="level-item">3 minutes read (About 454 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/11/22/Mac_Fundamental_Concept/2022-11-22-mac-command/">Terminal 주요 단축키</a></h1><div class="content"><h2 id="맥북-terminal-명령어"><a href="#맥북-terminal-명령어" class="headerlink" title="맥북 terminal 명령어"></a>맥북 terminal 명령어</h2><ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PATH=$(echo -n $PATH | awk -v RS=: &#x27;!($0 in a) &#123;a[$0]; printf(&quot;%s%s&quot;, length(a) &gt; 1 ? &quot;:&quot; : &quot;&quot;, $0)&#125;&#x27;)</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2022-11-21T15:00:00.000Z" title="2022. 11. 22. 오전 12:00:00">2022-11-22</time></span><span class="level-item">Updated&nbsp;<time datetime="2022-12-10T15:00:00.000Z" title="2022. 12. 11. 오전 12:00:00">2022-12-11</time></span><span class="level-item"><a class="link-muted" href="/categories/Command/">Command</a></span><span class="level-item">2 minutes read (About 297 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/11/22/Mac_Fundamental_Concept/2022-11-22-termianl-tips/">Terminal 사용 Tips</a></h1><div class="content"><h2 id="터미널-명령어-Tips"><a href="#터미널-명령어-Tips" class="headerlink" title="터미널 명령어 Tips"></a>터미널 명령어 Tips</h2><ul>
+<li><p>다운로드(finder)파일을 누르고 cd 뒤로 드레그로 옮겨서 여는것도 가능(추후 스크린샷)</p>
+</li>
+<li><p>화면 세로 분할 command + d, 분할 해제 command + shift + d</p>
+</li>
+<li><p>새로운 터미널 command + n</p>
+</li>
+<li><p>속성 보기 command + i (화면 색상 및 정보 확인)</p>
+</li>
+<li><p>터미널 탭 닫기 command + w</p>
+</li>
+<li><p>터미널 모든 탭 닫기 command + q</p>
+</li>
+<li><p>모든 탭 보기 또는 탭 개요 종료 command + shift + \</p>
+</li>
+<li><p>‘↑’ 화살표 누르면 전에 입력했던 명령어 불러오기 가능</p>
+</li>
+<li><p>몇 개의 단어 입력 후 Tap키 누르면 자동 완성 기능이 수행되어 작업이 편해짐</p>
+</li>
+</ul>
+<blockquote>
+<p>ex) cd 같은 명령어 뒤에 tap키 누르면 선택지에서 선택 가능</p>
+</blockquote>
+<ul>
+<li><p>control + ‘u’ &lt; 터미널에 쓰고 있던 타이핑 전체 지우기</p>
+</li>
+<li><p><code>.</code>  current directory(현재 폴더)</p>
+</li>
+<li><p><code>..</code>  previous directory(전 폴더)</p>
+</li>
+<li><p><code>~</code>  폴더 자유롭게 참조할때</p>
+</li>
+<li><p>바탕화면 파일 전체 숨김 (배경 깔끔한거 좋아하는 사람. 기본 배경만 나옴)</p>
+</li>
+</ul>
+<blockquote>
+<p><code>Defaults write com.apple.finder CreateDesktop false &amp;&amp; killall Finder</code><br>(해제하려면 false에서 true로 변경)</p>
+</blockquote>
+<ul>
+<li>Control + ‘a’ &#x3D;&#x3D; 맨 왼쪽으로 커서 이동</li>
+<li>Control + ‘e’ &#x3D;&#x3D; 맨 오른쪽으로 커서 이동</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2022-11-21T15:00:00.000Z" title="2022. 11. 22. 오전 12:00:00">2022-11-22</time></span><span class="level-item">Updated&nbsp;<time datetime="2022-12-13T15:00:00.000Z" title="2022. 12. 14. 오전 12:00:00">2022-12-14</time></span><span class="level-item"><a class="link-muted" href="/categories/Command/">Command</a></span><span class="level-item">3 minutes read (About 454 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/11/22/Mac_Fundamental_Concept/2022-11-22-mac-command/">Terminal 주요 단축키</a></h1><div class="content"><h2 id="맥북-terminal-명령어"><a href="#맥북-terminal-명령어" class="headerlink" title="맥북 terminal 명령어"></a>맥북 terminal 명령어</h2><ul>
 <li>현재 디렉토리 확인</li>
 </ul>
 <blockquote>
@@ -162,48 +204,6 @@
 <blockquote>
 <p><code>control + &#39;U&#39;</code> 입력</p>
 </blockquote>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2022-11-21T15:00:00.000Z" title="2022. 11. 22. 오전 12:00:00">2022-11-22</time></span><span class="level-item">Updated&nbsp;<time datetime="2022-12-10T15:00:00.000Z" title="2022. 12. 11. 오전 12:00:00">2022-12-11</time></span><span class="level-item"><a class="link-muted" href="/categories/Command/">Command</a></span><span class="level-item">2 minutes read (About 297 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/11/22/Mac_Fundamental_Concept/2022-11-22-termianl-tips/">Terminal 사용 Tips</a></h1><div class="content"><h2 id="터미널-명령어-Tips"><a href="#터미널-명령어-Tips" class="headerlink" title="터미널 명령어 Tips"></a>터미널 명령어 Tips</h2><ul>
-<li><p>다운로드(finder)파일을 누르고 cd 뒤로 드레그로 옮겨서 여는것도 가능(추후 스크린샷)</p>
-</li>
-<li><p>화면 세로 분할 command + d, 분할 해제 command + shift + d</p>
-</li>
-<li><p>새로운 터미널 command + n</p>
-</li>
-<li><p>속성 보기 command + i (화면 색상 및 정보 확인)</p>
-</li>
-<li><p>터미널 탭 닫기 command + w</p>
-</li>
-<li><p>터미널 모든 탭 닫기 command + q</p>
-</li>
-<li><p>모든 탭 보기 또는 탭 개요 종료 command + shift + \</p>
-</li>
-<li><p>‘↑’ 화살표 누르면 전에 입력했던 명령어 불러오기 가능</p>
-</li>
-<li><p>몇 개의 단어 입력 후 Tap키 누르면 자동 완성 기능이 수행되어 작업이 편해짐</p>
-</li>
-</ul>
-<blockquote>
-<p>ex) cd 같은 명령어 뒤에 tap키 누르면 선택지에서 선택 가능</p>
-</blockquote>
-<ul>
-<li><p>control + ‘u’ &lt; 터미널에 쓰고 있던 타이핑 전체 지우기</p>
-</li>
-<li><p><code>.</code>  current directory(현재 폴더)</p>
-</li>
-<li><p><code>..</code>  previous directory(전 폴더)</p>
-</li>
-<li><p><code>~</code>  폴더 자유롭게 참조할때</p>
-</li>
-<li><p>바탕화면 파일 전체 숨김 (배경 깔끔한거 좋아하는 사람. 기본 배경만 나옴)</p>
-</li>
-</ul>
-<blockquote>
-<p><code>Defaults write com.apple.finder CreateDesktop false &amp;&amp; killall Finder</code><br>(해제하려면 false에서 true로 변경)</p>
-</blockquote>
-<ul>
-<li>Control + ‘a’ &#x3D;&#x3D; 맨 왼쪽으로 커서 이동</li>
-<li>Control + ‘e’ &#x3D;&#x3D; 맨 오른쪽으로 커서 이동</li>
-</ul>
 </div></article></div></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Inhwan Cho"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Inhwan Cho</p><p class="is-size-6 is-block">Inhwan&#039;s Digital Space</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Seoul in Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">98</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="/" target="_self" rel="noopener">Home</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Github" href="https://github.com/InhwanCho"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Blog/"><span class="level-start"><span class="level-item">Blog</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Colab/"><span class="level-start"><span class="level-item">Colab</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/Command/"><span class="level-start"><span class="level-item">Command</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Errors/"><span class="level-start"><span class="level-item">Errors</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/Git/"><span class="level-start"><span class="level-item">Git</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/Mac/"><span class="level-start"><span class="level-item">Mac</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/OpenCV/"><span class="level-start"><span class="level-item">OpenCV</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/Portfolio/"><span class="level-start"><span class="level-item">Portfolio</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Project/"><span class="level-start"><span class="level-item">Project</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Review/"><span class="level-start"><span class="level-item">Review</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Samples/"><span class="level-start"><span class="level-item">Samples</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Study/"><span class="level-start"><span class="level-item">Study</span></span><span class="level-end"><span class="level-item tag">60</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time datetime="2023-01-18T06:23:12.874Z">2023-01-18</time></p><p class="title"><a href="/2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/">OpenCV 얼굴, 눈 등 특정 객체 검출</a></p><p class="categories"><a href="/categories/OpenCV/">OpenCV</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time datetime="2023-01-18T05:11:30.071Z">2023-01-18</time></p><p class="title"><a href="/2023/01/18/Study_folder/OpneCV/2023-01-18-contour/">OpenCV 윤곽선 검출</a></p><p class="categories"><a href="/categories/OpenCV/">OpenCV</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time datetime="2023-01-17T13:20:05.900Z">2023-01-17</time></p><p class="title"><a href="/2023/01/17/Study_folder/OpneCV/2023-01-18-opencv/">OpenCV 여러장의 이미지를 한장으로 출력하는 방법</a></p><p class="categories"><a href="/categories/OpenCV/">OpenCV</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time datetime="2023-01-15T15:00:00.000Z">2023-01-16</time></p><p class="title"><a href="/2023/01/16/Blogs_folder/2023-01-16-customizeing/">Icarus 테마 커스터마이징</a></p><p class="categories"><a href="/categories/Errors/">Errors</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time datetime="2023-01-14T15:00:00.000Z">2023-01-15</time></p><p class="title"><a href="/2023/01/15/Study_folder/OpneCV/2023-01-15-webcam-in-colab/">OpenCV 코랩에서 웹캠 사용하기</a></p><p class="categories"><a href="/categories/OpenCV/">OpenCV</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/01/"><span class="level-start"><span class="level-item">January 2023</span></span><span class="level-end"><span class="level-item tag">25</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/12/"><span class="level-start"><span class="level-item">December 2022</span></span><span class="level-end"><span class="level-item tag">50</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/11/"><span class="level-start"><span class="level-item">November 2022</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li></ul></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/yo_img.jpg" alt="Inhwan&#039;s Digital Space" height="28"></a><p class="is-size-7"><span>&copy; 2023 InhwanCho</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external nofollow noopener noreferrer">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/InhwanCho"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
