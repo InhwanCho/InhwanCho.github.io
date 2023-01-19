@@ -9,16 +9,16 @@
 
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/19/Study_folder/OpneCV/2023-01-19-face-recognizion/</loc>
-        <lastmod>2023-01-19T04:18:09.165Z</lastmod>
+        <loc>http://InhwanCho.github.io/2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/</loc>
+        <lastmod>2023-01-19T23:50:27.726Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/</loc>
-        <lastmod>2023-01-19T04:03:15.161Z</lastmod>
+        <loc>http://InhwanCho.github.io/2023/01/19/Study_folder/OpneCV/2023-01-19-face-recognizion/</loc>
+        <lastmod>2023-01-19T04:18:09.165Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -145,7 +145,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</loc>
         <lastmod>2023-01-07T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -153,7 +153,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</loc>
         <lastmod>2023-01-07T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -441,7 +441,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/TensorFlow/2022-12-15-img-generator/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/Pytorch/2022-12-15-dif-tran-alb/</loc>
         <lastmod>2022-12-14T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -449,7 +449,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/Pytorch/2022-12-15-dif-tran-alb/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/TensorFlow/2022-12-15-img-generator/</loc>
         <lastmod>2022-12-14T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -505,7 +505,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/TensorFlow/2022-12-12-deep_CNN/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Pytorch/2022-12-12-nn(CNN)/</loc>
         <lastmod>2022-12-11T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -513,7 +513,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Pytorch/2022-12-12-nn(CNN)/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/TensorFlow/2022-12-12-deep_CNN/</loc>
         <lastmod>2022-12-11T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -569,7 +569,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-KoGPT2_chatbot/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-BERT_fine_intro/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -577,7 +577,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-BERT_fine_intro/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-KoGPT2_chatbot/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -745,14 +745,6 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-OneHotEncoder/</loc>
-        <lastmod>2022-11-20T15:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-Scaling/</loc>
         <lastmod>2022-11-20T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -762,6 +754,14 @@
 
     <url>
         <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-get_dummies/</loc>
+        <lastmod>2022-11-20T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-OneHotEncoder/</loc>
         <lastmod>2022-11-20T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
