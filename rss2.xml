@@ -9,8 +9,33 @@
     <atom:link href="http://inhwancho.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I&#39;m Learning ML/DL</description>
-    <pubDate>Thu, 19 Jan 2023 04:18:09 GMT</pubDate>
+    <pubDate>Fri, 20 Jan 2023 02:45:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>코랩(colab)에서 kaggle(캐글) 데이터 바로 다운받기</title>
+      <link>http://inhwancho.github.io/2023/01/20/Colab_folder/2023-01-20-kaggle-colab/</link>
+      <guid>http://inhwancho.github.io/2023/01/20/Colab_folder/2023-01-20-kaggle-colab/</guid>
+      <pubDate>Fri, 20 Jan 2023 02:22:22 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="코랩에서-캐글-데이터를-바로-다운받는-방법"><a href="#코랩에서-캐글-데이터를-바로-다운받는-방법" class="headerlink" title="코랩에서 캐글 데이터를 바로 다운받는 방법"></a>코랩에서 캐글 데이터를 바로 다운받는 방법</h2><ul><li>kaggle 홈페이지의 오른쪽 프로필 -&gt; account -&gt; <code>create new api token</code> 누른 후 다운로드</li><li><code>kaggle.json</code> 파일을 업로드</li><li>맥북 로컬은 ~&#x2F;.kaggle에 파일을 옮겨서 사용하면 됩니다.</li></ul><img width="372" alt="캐글 오른쪽 프로필에서 Account 선택" src="https://user-images.githubusercontent.com/111936229/213606040-175f1dbd-c3a2-427f-9f06-501c8be91424.png"><img width="740" alt="Create New API Token 선택" src="https://user-images.githubusercontent.com/111936229/213606034-20d2da24-2a46-44ad-bfc7-bffb9618ff84.png"><figure class="highlight clean"><figcaption><span>in colab</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># <span class="keyword">import</span> kaggle # 요즘은 <span class="keyword">import</span> kaggle을 안해도 됩니다.</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> files</span><br><span class="line"></span><br><span class="line">files.upload()</span><br><span class="line"></span><br><span class="line"># api token(kaggle.json 파일)을 <span class="string">&#x27;파일 선택&#x27;</span> 눌러서 업로드</span><br></pre></td></tr></table></figure><figure class="highlight bash"><figcaption><span>in colab</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .kaggle 폴더 생성</span></span><br><span class="line">!<span class="built_in">mkdir</span> -p ~/.kaggle</span><br><span class="line"><span class="comment"># json파일 .kaggle로 복사</span></span><br><span class="line">!<span class="built_in">cp</span> kaggle.json ~/.kaggle/</span><br><span class="line"><span class="comment"># Permission Warning이 발생하지 않도록 해줍니다.</span></span><br><span class="line">!<span class="built_in">chmod</span> 600 ~/.kaggle/kaggle.json</span><br><span class="line"><span class="comment"># 내가 참가한 대회 리스트 확인(옵션)</span></span><br><span class="line"><span class="comment"># !kaggle competitions list</span></span><br></pre></td></tr></table></figure><ul><li>다운 받고 싶은 데이터의 API 주소를 복사하려면<ul><li>밑의 스크린샷의 <code>UTKFace</code> 같은 데이터 셋 주소를 클릭합니다.</li><li>그 후 오른쪽 <code>...</code>을 누르고 <code>copy api command</code>를 누릅니다.</li></ul></li></ul><img width="666" alt="노트북에서 사용한 데이터 종류" src="https://user-images.githubusercontent.com/111936229/213606050-f07c7df0-6633-40a4-9ab4-613a29f96b4b.png"><img width="1241" alt="copy api command" src="https://user-images.githubusercontent.com/111936229/213606045-2a6ba84f-9f2c-4705-9fa0-59a1174ae82e.png"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!kaggle datasets download -d jangedoo/utkface-new</span><br><span class="line">!ls</span><br></pre></td></tr></table></figure><img width="527" alt="결과" src="https://user-images.githubusercontent.com/111936229/213606041-89d451b8-d503-423f-9a37-addc5c4bdef9.png">]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Colab/">Colab</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Colab/">Colab</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/Kaggle/">Kaggle</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/20/Colab_folder/2023-01-20-kaggle-colab/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>OpenCV로 아는 얼굴인지 확인하기</title>
@@ -387,6 +412,32 @@
     </item>
     
     <item>
+      <title>tf.cast()</title>
+      <link>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</link>
+      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</guid>
+      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;tf-cast-x-dtype-name-x3D-None&quot;&gt;&lt;a href=&quot;#tf-cast-x-dtype-name-x3D-None&quot; class=&quot;headerlink&quot; title=&quot;tf.cast(x, dtype, name&amp;#x3D;None)&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="tf-cast-x-dtype-name-x3D-None"><a href="#tf-cast-x-dtype-name-x3D-None" class="headerlink" title="tf.cast(x, dtype, name&#x3D;None)"></a>tf.cast(x, dtype, name&#x3D;None)</h2><blockquote><p>The operation casts x (in case of Tensor) or x.values (in case of SparseTensor or IndexedSlices) to dtype.<br><br>해석하자면 x값을 새로운 형태의 dtype으로 캐스팅한다는 의미입니다.{:.prompt-info}</p></blockquote><ul><li><p>부동 소수점형에서 정수형으로 바꾼 경우 소수점을 버린다.</p></li><li><p>Boolean으로 참조한 경우 True이면 1, False이면 0을 출력한다.</p></li><li><p>예시를 보면 이해가 될겁니다.</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x = tf.constant([<span class="number">1.8</span>, <span class="number">2.2</span>, <span class="number">3.3</span>], dtype=tf.float32)</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="comment"># tf.Tensor([1.8 2.2 3.3], shape=(3,), dtype=float32)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x, tf.int32)</span><br><span class="line"><span class="comment"># 출력 결과를 보시면 반올림, 내림이 아닌 소수점을 버립니다.</span></span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=int32, numpy=array([1, 2, 3], dtype=int32)&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x&gt;<span class="number">2</span>, tf.float32)</span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=float32, numpy=array([0., 1., 1.], dtype=float32)&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Deeplearning-Study-Tensorflow/">Deeplearning,Study,Tensorflow</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>torch를 boolean값으로 변경</title>
       <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
       <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
@@ -411,32 +462,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>tf.cast()</title>
-      <link>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</link>
-      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</guid>
-      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;tf-cast-x-dtype-name-x3D-None&quot;&gt;&lt;a href=&quot;#tf-cast-x-dtype-name-x3D-None&quot; class=&quot;headerlink&quot; title=&quot;tf.cast(x, dtype, name&amp;#x3D;None)&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="tf-cast-x-dtype-name-x3D-None"><a href="#tf-cast-x-dtype-name-x3D-None" class="headerlink" title="tf.cast(x, dtype, name&#x3D;None)"></a>tf.cast(x, dtype, name&#x3D;None)</h2><blockquote><p>The operation casts x (in case of Tensor) or x.values (in case of SparseTensor or IndexedSlices) to dtype.<br><br>해석하자면 x값을 새로운 형태의 dtype으로 캐스팅한다는 의미입니다.{:.prompt-info}</p></blockquote><ul><li><p>부동 소수점형에서 정수형으로 바꾼 경우 소수점을 버린다.</p></li><li><p>Boolean으로 참조한 경우 True이면 1, False이면 0을 출력한다.</p></li><li><p>예시를 보면 이해가 될겁니다.</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x = tf.constant([<span class="number">1.8</span>, <span class="number">2.2</span>, <span class="number">3.3</span>], dtype=tf.float32)</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="comment"># tf.Tensor([1.8 2.2 3.3], shape=(3,), dtype=float32)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x, tf.int32)</span><br><span class="line"><span class="comment"># 출력 결과를 보시면 반올림, 내림이 아닌 소수점을 버립니다.</span></span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=int32, numpy=array([1, 2, 3], dtype=int32)&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x&gt;<span class="number">2</span>, tf.float32)</span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=float32, numpy=array([0., 1., 1.], dtype=float32)&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Deeplearning-Study-Tensorflow/">Deeplearning,Study,Tensorflow</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
       
     </item>
     
@@ -518,33 +543,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/06/Study_folder/Pytorch/2023-01-06-squeeze/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>파이썬 에러 생성 및 처리 방법(assert, raise, try)</title>
-      <link>http://inhwancho.github.io/2023/01/05/Study_folder/Basic_study/2023-01-05-assert/</link>
-      <guid>http://inhwancho.github.io/2023/01/05/Study_folder/Basic_study/2023-01-05-assert/</guid>
-      <pubDate>Wed, 04 Jan 2023 15:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;Assert-사용-방법&quot;&gt;&lt;a href=&quot;#Assert-사용-방법&quot; class=&quot;headerlink&quot; title=&quot;Assert 사용 방법&quot;&gt;&lt;/a&gt;Assert 사용 방법&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;예외 처리(try, raise)함수와 달리 </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="Assert-사용-방법"><a href="#Assert-사용-방법" class="headerlink" title="Assert 사용 방법"></a>Assert 사용 방법</h2><ul><li>예외 처리(try, raise)함수와 달리 <code>assert</code>는 <code>가정 설명문</code> 입니다.</li><li>즉, 어떤 조건이 True면 pass되고, 아니면 Error(오류)를 생성합니다.</li><li>방법은 간단합니다. </li><li><code>assert (가정법), &#39;에러 메시지 작성&#39;</code>이렇게 작성하기면 됩니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">emd = <span class="number">256</span></span><br><span class="line">heads =<span class="number">8</span></span><br><span class="line">head_dim = emd // heads</span><br><span class="line"></span><br><span class="line"><span class="keyword">assert</span> (head_dim * heads == emd), <span class="string">&#x27;embed size needs to be div by heads&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line"><span class="comment"># 실행하면 (head_dim * heads == emd)이 True 때문에 아무 출력 결과가 없다.</span></span><br><span class="line">hello</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 앞의 값이 False라면</span></span><br><span class="line"><span class="keyword">assert</span> (head_dim * heads == emd + <span class="number">1</span>), <span class="string">&#x27;embed size needs to be div by heads&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line"></span><br><span class="line">      <span class="number">3</span> head_dim = emd // heads</span><br><span class="line">      <span class="number">4</span> </span><br><span class="line">----&gt; <span class="number">5</span> <span class="keyword">assert</span> (head_dim * heads == emd + <span class="number">1</span>), <span class="string">&#x27;embed size needs to be div by heads&#x27;</span></span><br><span class="line">      <span class="number">6</span> </span><br><span class="line"></span><br><span class="line">AssertionError: embed size needs to be div by heads</span><br><span class="line"><span class="comment"># 위와 같은 AssertionError가 생성된다.</span></span><br></pre></td></tr></table></figure><h2 id="Raise-사용-방법"><a href="#Raise-사용-방법" class="headerlink" title="Raise 사용 방법"></a>Raise 사용 방법</h2><ul><li>일부러 에러를 발생시켜야 되는 경우가 있는데, 이때 사용하는게 assert와 raise</li><li>raise는 assert와 달리 실행만 되면 에러가 생성됩니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Exception으로 문구를 작성해도 되고 안해도 됩니다(옵션)</span></span><br><span class="line"><span class="keyword">raise</span> Exception(<span class="string">&#x27;hi&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line"><span class="comment"># 결과-에러</span></span><br><span class="line">----&gt; <span class="number">1</span> <span class="keyword">raise</span> Exception(<span class="string">&#x27;아무 에러 문구&#x27;</span>)</span><br><span class="line">      <span class="number">2</span> </span><br><span class="line">      <span class="number">3</span> <span class="built_in">print</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line"></span><br><span class="line">Exception: 아무 에러 문구</span><br><span class="line"></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 보통 이런식으로 조건문과 같이 사용합니다</span></span><br><span class="line">b = <span class="number">1</span></span><br><span class="line">a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> b <span class="keyword">not</span> <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">raise</span> Exception(<span class="string">&#x27;a에 없는 값이라서 에러 발생 시킬게요.&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line">hello</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">b = <span class="number">5</span></span><br><span class="line">a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> b <span class="keyword">not</span> <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">raise</span> Exception(<span class="string">&#x27;a에 없는 값이라서 에러 발생 시킬게요.&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line">      <span class="number">4</span> <span class="keyword">if</span> b <span class="keyword">not</span> <span class="keyword">in</span> a:</span><br><span class="line">----&gt; <span class="number">5</span>     <span class="keyword">raise</span> Exception(<span class="string">&#x27;a에 없는 값이라서 에러 발생 시킬게요.&#x27;</span>)</span><br><span class="line">      <span class="number">6</span> </span><br><span class="line">      <span class="number">7</span> <span class="built_in">print</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line"></span><br><span class="line">Exception: a에 없는 값이라서 에러 발생 시킬게요.</span><br></pre></td></tr></table></figure><h2 id="Try-Except-사용-방법"><a href="#Try-Except-사용-방법" class="headerlink" title="Try, Except 사용 방법"></a>Try, Except 사용 방법</h2><ul><li>try는 에러가 발생하더라도 그냥 작업을 진행하게 만들고 싶을 때 많이 사용됩니다.</li><li>except뒤 에 발생되는 <code>[에러 이름]</code> 그 뒤에 처리를 어떻게 할지 사용</li><li>에러가 나와도 그냥 pass를 원하면 <code>pass</code> 입력</li><li>예시를 보면 바로 이해되실 겁니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 숫자 2개를 나눌때 나오는 에러 테스트입니다.</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    a, b = <span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&#x27;숫자 2개를 띄어쓰기를 사용해서 입력해주세요 : &#x27;</span>).split())</span><br><span class="line">    <span class="built_in">print</span>(a / b)</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError:    <span class="comment"># 숫자를 0으로 나눠서 에러가 발생했을 때 실행됨</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;숫자를 0으로 나눌 수 없습니다.&#x27;</span>)</span><br><span class="line"><span class="keyword">except</span> ValueError <span class="keyword">as</span> a:      <span class="comment"># input값을 제대로 입력하지 않으면 실행</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;잘못된 입력입니다&#x27;</span>, a)</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hi&#x27;</span>)</span><br><span class="line"><span class="comment"># 결과</span></span><br><span class="line">숫자 <span class="number">2</span>개를 띄어쓰기를 사용해서 입력해주세요 : <span class="number">3</span> <span class="number">1</span></span><br><span class="line"><span class="number">3.0</span></span><br><span class="line">hi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 결과(zerodivision)</span></span><br><span class="line">숫자 <span class="number">2</span>개를 띄어쓰기를 사용해서 입력해주세요 : <span class="number">3</span> <span class="number">0</span></span><br><span class="line">숫자를 <span class="number">0</span>으로 나눌 수 없습니다.</span><br><span class="line"></span><br><span class="line"><span class="comment"># 결과(valueeroor)</span></span><br><span class="line">숫자 <span class="number">2</span>개를 띄어쓰기를 사용해서 입력해주세요 : 3abd</span><br><span class="line">잘못된 입력입니다 invalid literal <span class="keyword">for</span> <span class="built_in">int</span>() <span class="keyword">with</span> base <span class="number">10</span>: <span class="string">&#x27;3abd&#x27;</span></span><br><span class="line">hi</span><br></pre></td></tr></table></figure><ul><li>만약 어떤 에러인지 모르는 경우 테스트를하여 에러를 확인한다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">a, b = <span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&#x27;숫자 2개를 띄어쓰기를 사용해서 입력해주세요 : &#x27;</span>).split())</span><br><span class="line"><span class="built_in">print</span>(a / b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># &#x27;3 0&#x27;을 입력할 경우 &#x27;ZeroDivisionError&#x27;</span></span><br><span class="line">&lt;ipython-<span class="built_in">input</span>-<span class="number">65</span>-a03c397788a2&gt; <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">      <span class="number">1</span> a, b = <span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&#x27;숫자 2개를 띄어쓰기를 사용해서 입력해주세요 : &#x27;</span>).split())</span><br><span class="line">----&gt; <span class="number">2</span> <span class="built_in">print</span>(a / b)</span><br><span class="line"></span><br><span class="line">ZeroDivisionError: division by zero</span><br><span class="line"></span><br><span class="line"><span class="comment"># &#x27;3abd&#x27;을 입력할 경우 &#x27;ValueError&#x27;</span></span><br><span class="line">----&gt; <span class="number">1</span> a, b = <span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&#x27;숫자 2개를 띄어쓰기를 사용해서 입력해주세요 : &#x27;</span>).split())</span><br><span class="line">      <span class="number">2</span> <span class="built_in">print</span>(a / b)</span><br><span class="line"></span><br><span class="line">ValueError: invalid literal <span class="keyword">for</span> <span class="built_in">int</span>() <span class="keyword">with</span> base <span class="number">10</span>: <span class="string">&#x27;3abd&#x27;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Study-Python/">Study,Python</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/05/Study_folder/Basic_study/2023-01-05-assert/#disqus_thread</comments>
       
     </item>
     
