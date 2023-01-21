@@ -9,14 +9,6 @@
 
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/21/Colab_folder/2023-01-21-facedect-colab/</loc>
-        <lastmod>2023-01-21T02:33:11.725Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://InhwanCho.github.io/2023/01/20/Colab_folder/2023-01-20-kaggle-colab/</loc>
         <lastmod>2023-01-20T02:45:13.397Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -97,7 +89,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</loc>
         <lastmod>2023-01-10T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -105,7 +97,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</loc>
         <lastmod>2023-01-10T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -145,6 +137,14 @@
     </url>
 
     <url>
+        <loc>http://InhwanCho.github.io/2022/12/30/Personal_folder/for_project/2022-12-29-captioning_v2/</loc>
+        <lastmod>2023-01-07T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/NLP(Natural_Language_Processing)/2023-01-08-attention-imp/</loc>
         <lastmod>2023-01-07T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -154,14 +154,6 @@
 
     <url>
         <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</loc>
-        <lastmod>2023-01-07T15:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://InhwanCho.github.io/2022/12/30/Personal_folder/for_project/2022-12-29-captioning_v2/</loc>
         <lastmod>2023-01-07T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -313,7 +305,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Basic_study/2022-12-12-os_module/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/29/Personal_folder/for_project/2022-12-29-captioning_v1/</loc>
         <lastmod>2022-12-28T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -321,7 +313,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/29/Personal_folder/for_project/2022-12-29-captioning_v1/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Basic_study/2022-12-12-os_module/</loc>
         <lastmod>2022-12-28T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -729,7 +721,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-konlpy-install/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-nltk-download/</loc>
         <lastmod>2022-11-21T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -737,7 +729,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-nltk-download/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-konlpy-install/</loc>
         <lastmod>2022-11-21T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -801,7 +793,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-sample-codes/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -809,7 +801,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-sample-codes/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
