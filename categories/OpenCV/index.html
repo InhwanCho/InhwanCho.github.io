@@ -68,6 +68,36 @@
 
 <h2 id="이미지-저장"><a href="#이미지-저장" class="headerlink" title="이미지 저장"></a>이미지 저장</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">loaded_img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line">cv2.imwrite(<span class="string">&#x27;folder/folder1/img.jpg&#x27;</span>,loaded_img)</span><br></pre></td></tr></table></figure>
 
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">a minute read (About 161 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/">OpenCV 이미지 변환</a></h1><div class="content"><h2 id="Grayscale-GaussianBlur"><a href="#Grayscale-GaussianBlur" class="headerlink" title="Grayscale, GaussianBlur"></a>Grayscale, GaussianBlur</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"><span class="comment"># 컬러 -&gt; 흑백으로 변환</span></span><br><span class="line">imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line"><span class="comment"># ksize == kernel size이므로 홀수만 사용 가능, sigmaX는 블러 정도라고 생각하면 편하며,</span></span><br><span class="line"><span class="comment"># 보통 -3~3사이의 값을 사용</span></span><br><span class="line">imgBlur = cv2.GaussianBlur(imgGray, ksize=(<span class="number">7</span>,<span class="number">7</span>),sigmaX=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,imgGray)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output2&#x27;</span>,imgBlur)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>결과 imgGray</li>
+</ul>
+<img width="1020" alt="스크린샷 2023-01-11 오후 1 15 37" src="https://user-images.githubusercontent.com/111936229/211717325-d4d896f0-630b-4450-8977-a492fa691bd5.png">
+
+<ul>
+<li>결과 imgBlur</li>
+</ul>
+<img width="1014" alt="스크린샷 2023-01-11 오후 1 25 13" src="https://user-images.githubusercontent.com/111936229/211717481-1721d754-f9f4-4ef3-bf6d-ea4e4b041f3a.png">
+
+
+<h2 id="Canny-Dialation"><a href="#Canny-Dialation" class="headerlink" title="Canny, Dialation"></a>Canny, Dialation</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line">imgCanny = cv2.Canny(img,<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>), np.uint8)</span><br><span class="line"><span class="comment"># iterations에 높은 수를 넣으면 윤곽선이 더 커집니다.</span></span><br><span class="line">imgDialation = cv2.dilate(imgCanny, kernel=kernel,iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">imgEroded = cv2.erode(imgDialation, kernel=kernel, iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output3&#x27;</span>,imgCanny)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output4&#x27;</span>,imgDialation)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output5&#x27;</span>,imgEroded)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>결과 imgCanny</li>
+</ul>
+<img width="1019" alt="스크린샷 2023-01-11 오후 1 32 21" src="https://user-images.githubusercontent.com/111936229/211718228-2469f803-60dd-4930-bf20-7c1111fa6378.png">
+
+<ul>
+<li>결과 imgDialation</li>
+</ul>
+<img width="1021" alt="스크린샷 2023-01-11 오후 1 37 22" src="https://user-images.githubusercontent.com/111936229/211718825-08992f1e-f210-491f-8b42-14c337b9c85c.png">
+
+<ul>
+<li>결과 imgEroded</li>
+</ul>
+<img width="1023" alt="스크린샷 2023-01-11 오후 1 42 18" src="https://user-images.githubusercontent.com/111936229/211719388-c8fa40b9-a489-44b0-810d-bb201e9ed1fb.png">
+
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">2 minutes read (About 354 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/">OpenCV에 관한 정보</a></h1><div class="content"><h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul>
 <li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p>
 <ul>
@@ -101,36 +131,6 @@
 </ul>
 </li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">a minute read (About 161 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/">OpenCV 이미지 변환</a></h1><div class="content"><h2 id="Grayscale-GaussianBlur"><a href="#Grayscale-GaussianBlur" class="headerlink" title="Grayscale, GaussianBlur"></a>Grayscale, GaussianBlur</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"><span class="comment"># 컬러 -&gt; 흑백으로 변환</span></span><br><span class="line">imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line"><span class="comment"># ksize == kernel size이므로 홀수만 사용 가능, sigmaX는 블러 정도라고 생각하면 편하며,</span></span><br><span class="line"><span class="comment"># 보통 -3~3사이의 값을 사용</span></span><br><span class="line">imgBlur = cv2.GaussianBlur(imgGray, ksize=(<span class="number">7</span>,<span class="number">7</span>),sigmaX=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,imgGray)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output2&#x27;</span>,imgBlur)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>결과 imgGray</li>
-</ul>
-<img width="1020" alt="스크린샷 2023-01-11 오후 1 15 37" src="https://user-images.githubusercontent.com/111936229/211717325-d4d896f0-630b-4450-8977-a492fa691bd5.png">
-
-<ul>
-<li>결과 imgBlur</li>
-</ul>
-<img width="1014" alt="스크린샷 2023-01-11 오후 1 25 13" src="https://user-images.githubusercontent.com/111936229/211717481-1721d754-f9f4-4ef3-bf6d-ea4e4b041f3a.png">
-
-
-<h2 id="Canny-Dialation"><a href="#Canny-Dialation" class="headerlink" title="Canny, Dialation"></a>Canny, Dialation</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line">imgCanny = cv2.Canny(img,<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>), np.uint8)</span><br><span class="line"><span class="comment"># iterations에 높은 수를 넣으면 윤곽선이 더 커집니다.</span></span><br><span class="line">imgDialation = cv2.dilate(imgCanny, kernel=kernel,iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">imgEroded = cv2.erode(imgDialation, kernel=kernel, iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output3&#x27;</span>,imgCanny)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output4&#x27;</span>,imgDialation)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output5&#x27;</span>,imgEroded)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>결과 imgCanny</li>
-</ul>
-<img width="1019" alt="스크린샷 2023-01-11 오후 1 32 21" src="https://user-images.githubusercontent.com/111936229/211718228-2469f803-60dd-4930-bf20-7c1111fa6378.png">
-
-<ul>
-<li>결과 imgDialation</li>
-</ul>
-<img width="1021" alt="스크린샷 2023-01-11 오후 1 37 22" src="https://user-images.githubusercontent.com/111936229/211718825-08992f1e-f210-491f-8b42-14c337b9c85c.png">
-
-<ul>
-<li>결과 imgEroded</li>
-</ul>
-<img width="1023" alt="스크린샷 2023-01-11 오후 1 42 18" src="https://user-images.githubusercontent.com/111936229/211719388-c8fa40b9-a489-44b0-810d-bb201e9ed1fb.png">
-
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">2 minutes read (About 343 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-shape/">OpenCV shape 변환</a></h1><div class="content"><h2 id="OpenCV와-PIL의-이미지-형태"><a href="#OpenCV와-PIL의-이미지-형태" class="headerlink" title="OpenCV와 PIL의 이미지 형태"></a>OpenCV와 PIL의 이미지 형태</h2><ul>
 <li>결과를 보시면 알겠지만 width, height이 반대입니다.</li>
 </ul>
