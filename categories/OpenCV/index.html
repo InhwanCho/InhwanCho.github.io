@@ -49,6 +49,39 @@
 <li>실행 결과 입니다.(<code>capture button</code>을 누르면 실행 종료)</li>
 </ul>
 <img width="714" alt="코랩 캡쳐 결과" src="https://user-images.githubusercontent.com/111936229/212513521-0c8d24b4-c925-4979-9f0a-427b40d15418.png">
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">2 minutes read (About 354 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/">OpenCV에 관한 정보</a></h1><div class="content"><h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul>
+<li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p>
+<ul>
+<li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li>
+</ul>
+</li>
+<li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p>
+<ul>
+<li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul>
+<li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul>
+<li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li>
+<li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li>
+<li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>VScode의 경우는 <ul>
+<li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li>
+<li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li>
+<li>실행해서 잘 되는지 확인한다.</li>
+</ul>
+</li>
+</ul>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">a minute read (About 161 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/">OpenCV 이미지 변환</a></h1><div class="content"><h2 id="Grayscale-GaussianBlur"><a href="#Grayscale-GaussianBlur" class="headerlink" title="Grayscale, GaussianBlur"></a>Grayscale, GaussianBlur</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"><span class="comment"># 컬러 -&gt; 흑백으로 변환</span></span><br><span class="line">imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line"><span class="comment"># ksize == kernel size이므로 홀수만 사용 가능, sigmaX는 블러 정도라고 생각하면 편하며,</span></span><br><span class="line"><span class="comment"># 보통 -3~3사이의 값을 사용</span></span><br><span class="line">imgBlur = cv2.GaussianBlur(imgGray, ksize=(<span class="number">7</span>,<span class="number">7</span>),sigmaX=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,imgGray)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output2&#x27;</span>,imgBlur)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -98,39 +131,6 @@
 
 <h2 id="이미지-저장"><a href="#이미지-저장" class="headerlink" title="이미지 저장"></a>이미지 저장</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">loaded_img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line">cv2.imwrite(<span class="string">&#x27;folder/folder1/img.jpg&#x27;</span>,loaded_img)</span><br></pre></td></tr></table></figure>
 
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">2 minutes read (About 354 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/">OpenCV에 관한 정보</a></h1><div class="content"><h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul>
-<li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p>
-<ul>
-<li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li>
-</ul>
-</li>
-<li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p>
-<ul>
-<li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul>
-<li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul>
-<li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li>
-<li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li>
-<li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>VScode의 경우는 <ul>
-<li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li>
-<li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li>
-<li>실행해서 잘 되는지 확인한다.</li>
-</ul>
-</li>
-</ul>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="Invalid Date">2023-01-11</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-10T15:00:00.000Z" title="2023. 1. 11. 오전 12:00:00">2023-01-11</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">2 minutes read (About 343 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/11/Study_folder/OpneCV/2023-01-11-shape/">OpenCV shape 변환</a></h1><div class="content"><h2 id="OpenCV와-PIL의-이미지-형태"><a href="#OpenCV와-PIL의-이미지-형태" class="headerlink" title="OpenCV와 PIL의 이미지 형태"></a>OpenCV와 PIL의 이미지 형태</h2><ul>
 <li>결과를 보시면 알겠지만 width, height이 반대입니다.</li>
 </ul>
