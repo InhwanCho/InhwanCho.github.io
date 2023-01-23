@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>http://InhwanCho.github.io/2023/01/23/Portfolio/%E1%84%86%E1%85%A9%E1%84%83%E1%85%B2%E1%86%AF%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3(%E1%84%8C%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%92%E1%85%AA%E1%86%AB)/</loc>
+        <lastmod>2023-01-22T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://InhwanCho.github.io/2023/01/20/Colab_folder/2023-01-20-kaggle-colab/</loc>
         <lastmod>2023-01-20T02:45:13.397Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -721,7 +729,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-nltk-download/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-konlpy-install/</loc>
         <lastmod>2022-11-21T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -729,7 +737,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-konlpy-install/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-nltk-download/</loc>
         <lastmod>2022-11-21T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -777,15 +785,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Mac_Fundamental_Concept/2022-11-20-jupyter-command/</loc>
-        <lastmod>2022-11-19T15:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Mac_Fundamental_Concept/2022-11-20-vim-command/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -801,7 +801,15 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Mac_Fundamental_Concept/2022-11-20-jupyter-command/</loc>
+        <lastmod>2022-11-19T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/11/20/Mac_Fundamental_Concept/2022-11-20-vim-command/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
