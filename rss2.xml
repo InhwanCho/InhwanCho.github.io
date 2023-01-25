@@ -224,10 +224,7 @@
       <guid>http://inhwancho.github.io/2023/01/13/Blogs_folder/2023-01-13-blogmoving/</guid>
       <pubDate>Thu, 12 Jan 2023 15:00:00 GMT</pubDate>
       
-        
-        
-      <description>&lt;h2 id=&quot;깃허브-블로그-기존-페이지-잔존-시&quot;&gt;&lt;a href=&quot;#깃허브-블로그-기존-페이지-잔존-시&quot; class=&quot;headerlink&quot; title=&quot;깃허브 블로그 기존 페이지 잔존 시&quot;&gt;&lt;/a&gt;깃허브 블로그 기존 페이지 잔존 시&lt;/h2&gt;&lt;p&gt;깃허</description>
-        
+      <description>Click to read more in detail</description>
       
       
       
@@ -270,33 +267,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>OpenCV에 관한 정보</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul><li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p><ul><li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li></ul></li><li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p><ul><li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/Path/">Path</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
       
     </item>
     
@@ -349,6 +319,33 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-shape/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>OpenCV에 관한 정보</title>
+      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
+      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
+      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul><li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p><ul><li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li></ul></li><li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p><ul><li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/Path/">Path</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
       
     </item>
     
@@ -438,34 +435,6 @@
     </item>
     
     <item>
-      <title>torch를 boolean값으로 변경</title>
-      <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
-      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
-      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;operation-참조&quot;&gt;&lt;a href=&quot;#operation-참조&quot; class=&quot;headerlink&quot; title=&quot;operation 참조&quot;&gt;&lt;/a&gt;operation 참조&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;예시를 통해 알아보겠습니다.&lt;/li&gt;
-&lt;/u</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="operation-참조"><a href="#operation-참조" class="headerlink" title="operation 참조"></a>operation 참조</h2><ul><li>예시를 통해 알아보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x&gt;<span class="number">2</span>)</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((x&gt;<span class="number">2</span>).<span class="built_in">type</span>(torch.float32))</span><br><span class="line"><span class="comment"># tensor([0., 0., 1., 1.])</span></span><br></pre></td></tr></table></figure><h2 id="gt-함수를-활용"><a href="#gt-함수를-활용" class="headerlink" title="gt() 함수를 활용"></a>gt() 함수를 활용</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>))</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>).to(torch.int32))</span><br><span class="line"><span class="comment"># tensor([0, 0, 1, 1], dtype=torch.int32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Deeplearning-Study-Pytorch/">Deeplearning,Study,Pytorch</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>tf.cast()</title>
       <link>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</link>
       <guid>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</guid>
@@ -494,6 +463,34 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>torch를 boolean값으로 변경</title>
+      <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
+      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
+      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;operation-참조&quot;&gt;&lt;a href=&quot;#operation-참조&quot; class=&quot;headerlink&quot; title=&quot;operation 참조&quot;&gt;&lt;/a&gt;operation 참조&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;예시를 통해 알아보겠습니다.&lt;/li&gt;
+&lt;/u</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="operation-참조"><a href="#operation-참조" class="headerlink" title="operation 참조"></a>operation 참조</h2><ul><li>예시를 통해 알아보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x&gt;<span class="number">2</span>)</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((x&gt;<span class="number">2</span>).<span class="built_in">type</span>(torch.float32))</span><br><span class="line"><span class="comment"># tensor([0., 0., 1., 1.])</span></span><br></pre></td></tr></table></figure><h2 id="gt-함수를-활용"><a href="#gt-함수를-활용" class="headerlink" title="gt() 함수를 활용"></a>gt() 함수를 활용</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>))</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>).to(torch.int32))</span><br><span class="line"><span class="comment"># tensor([0, 0, 1, 1], dtype=torch.int32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Deeplearning-Study-Pytorch/">Deeplearning,Study,Pytorch</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
       
     </item>
     
