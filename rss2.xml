@@ -246,6 +246,31 @@
     </item>
     
     <item>
+      <title>OpenCV 기초</title>
+      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</link>
+      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</guid>
+      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="OpenCV-이미지-확인"><a href="#OpenCV-이미지-확인" class="headerlink" title="OpenCV 이미지 확인"></a>OpenCV 이미지 확인</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line"><span class="comment"># imread로 이미지 읽어오기</span></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># imshow(&#x27;이미지 표시 이름&#x27;,이미지파일)입력</span></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,img)</span><br><span class="line">waitKey(<span class="number">0</span>) <span class="comment">#(0을 넣으면 == 계속 딜레이 - 대기하라는 의미)</span></span><br></pre></td></tr></table></figure><ul><li>imshow의 앞 ‘output’이름으로 img 파일이 출력됩니다.</li><li>사진, 영상을 끄려면 키보드 <code>q</code>를 누르시면 됩니다.</li></ul><img width="1026" alt="스크린샷 2023-01-11 오후 1 07 21" src="https://user-images.githubusercontent.com/111936229/211715668-3db417b0-b1ff-4eaa-9173-73241c8cf7e5.png"><h2 id="내장-카메라-웹캠-실행"><a href="#내장-카메라-웹캠-실행" class="headerlink" title="내장 카메라(웹캠) 실행"></a>내장 카메라(웹캠) 실행</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="comment"># 웹캠</span></span><br><span class="line">cap = cv2.VideoCapture(<span class="number">0</span>) <span class="comment">#노트북은 0번이 기본 내장 웹캠</span></span><br><span class="line"></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">3</span>,<span class="number">640</span>) <span class="comment">#id_nubmer, width</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">4</span>,<span class="number">480</span>) <span class="comment">#id_number, height</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">10</span>,<span class="number">100</span>) <span class="comment">#id_number,bright</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 웹캠은 프레임 단위로 계속 출력되기 때문에 일반적으로 while문으로 실행한다.</span></span><br><span class="line"><span class="comment"># 키보드 &#x27;q&#x27;버튼을 누르면 실행이 종료됩니다.</span></span><br><span class="line"><span class="comment"># success는 Ture,False이고, img는 프레임 단위의 이미지로 저장되는 형태이다.</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    success, img = cap.read()</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;video_mp4&#x27;</span>, img)</span><br><span class="line">    <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure><ul><li>실행 결과</li></ul><img width="705" alt="스크린샷 2023-01-15 오전 11 00 45" src="https://user-images.githubusercontent.com/111936229/212514462-86cdbf15-6286-4151-9a76-55a2e15c7cad.png"><h2 id="이미지-저장"><a href="#이미지-저장" class="headerlink" title="이미지 저장"></a>이미지 저장</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">loaded_img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line">cv2.imwrite(<span class="string">&#x27;folder/folder1/img.jpg&#x27;</span>,loaded_img)</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>OpenCV에 관한 정보</title>
       <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
       <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
@@ -321,31 +346,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-shape/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>OpenCV 기초</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="OpenCV-이미지-확인"><a href="#OpenCV-이미지-확인" class="headerlink" title="OpenCV 이미지 확인"></a>OpenCV 이미지 확인</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line"><span class="comment"># imread로 이미지 읽어오기</span></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># imshow(&#x27;이미지 표시 이름&#x27;,이미지파일)입력</span></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,img)</span><br><span class="line">waitKey(<span class="number">0</span>) <span class="comment">#(0을 넣으면 == 계속 딜레이 - 대기하라는 의미)</span></span><br></pre></td></tr></table></figure><ul><li>imshow의 앞 ‘output’이름으로 img 파일이 출력됩니다.</li><li>사진, 영상을 끄려면 키보드 <code>q</code>를 누르시면 됩니다.</li></ul><img width="1026" alt="스크린샷 2023-01-11 오후 1 07 21" src="https://user-images.githubusercontent.com/111936229/211715668-3db417b0-b1ff-4eaa-9173-73241c8cf7e5.png"><h2 id="내장-카메라-웹캠-실행"><a href="#내장-카메라-웹캠-실행" class="headerlink" title="내장 카메라(웹캠) 실행"></a>내장 카메라(웹캠) 실행</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="comment"># 웹캠</span></span><br><span class="line">cap = cv2.VideoCapture(<span class="number">0</span>) <span class="comment">#노트북은 0번이 기본 내장 웹캠</span></span><br><span class="line"></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">3</span>,<span class="number">640</span>) <span class="comment">#id_nubmer, width</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">4</span>,<span class="number">480</span>) <span class="comment">#id_number, height</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">10</span>,<span class="number">100</span>) <span class="comment">#id_number,bright</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 웹캠은 프레임 단위로 계속 출력되기 때문에 일반적으로 while문으로 실행한다.</span></span><br><span class="line"><span class="comment"># 키보드 &#x27;q&#x27;버튼을 누르면 실행이 종료됩니다.</span></span><br><span class="line"><span class="comment"># success는 Ture,False이고, img는 프레임 단위의 이미지로 저장되는 형태이다.</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    success, img = cap.read()</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;video_mp4&#x27;</span>, img)</span><br><span class="line">    <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure><ul><li>실행 결과</li></ul><img width="705" alt="스크린샷 2023-01-15 오전 11 00 45" src="https://user-images.githubusercontent.com/111936229/212514462-86cdbf15-6286-4151-9a76-55a2e15c7cad.png"><h2 id="이미지-저장"><a href="#이미지-저장" class="headerlink" title="이미지 저장"></a>이미지 저장</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">loaded_img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line">cv2.imwrite(<span class="string">&#x27;folder/folder1/img.jpg&#x27;</span>,loaded_img)</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/#disqus_thread</comments>
       
     </item>
     
