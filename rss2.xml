@@ -9,7 +9,7 @@
     <atom:link href="http://inhwancho.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I&#39;m Learning ML/DL</description>
-    <pubDate>Thu, 26 Jan 2023 04:35:27 GMT</pubDate>
+    <pubDate>Thu, 26 Jan 2023 07:03:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,9 +28,9 @@
       <category domain="http://InhwanCho.github.io/categories/Portfolio/">Portfolio</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Project/">Project</category>
+      <category domain="http://InhwanCho.github.io/tags/project/">project</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Portfolio/">Portfolio</category>
+      <category domain="http://InhwanCho.github.io/tags/portfolio/">portfolio</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/23/Portfolio/2023-01-23-visual-project/#disqus_thread</comments>
@@ -78,9 +78,13 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/study/">study</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/face-recognition/">face_recognition</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/19/Study_folder/OpneCV/2023-01-19-face-recognizion/#disqus_thread</comments>
@@ -103,9 +107,17 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/object/">object</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/detection/">detection</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EA%B0%9D%EC%B2%B4/">객체</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/harrcascade/">harrcascade</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/#disqus_thread</comments>
@@ -128,11 +140,13 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Contour/">Contour</category>
+      <category domain="http://InhwanCho.github.io/tags/contour/">contour</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EC%9C%A4%EA%B3%BD%EC%84%A0/">윤곽선</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/18/Study_folder/OpneCV/2023-01-18-contour/#disqus_thread</comments>
@@ -155,9 +169,13 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/stack/">stack</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%ED%95%9C%EC%9E%A5%EC%97%90-%EC%97%AC%EB%9F%AC%EA%B0%9C-%EC%82%AC%EC%A7%84/">한장에 여러개 사진</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/17/Study_folder/OpneCV/2023-01-18-opencv/#disqus_thread</comments>
@@ -205,13 +223,17 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Colab/">Colab</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/webcam/">webcam</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Webcam/">Webcam</category>
+      <category domain="http://InhwanCho.github.io/tags/%EC%9B%B9%EC%BA%A0/">웹캠</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EC%BD%94%EB%9E%A9/">코랩</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/colab/">colab</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/15/Study_folder/OpneCV/2023-01-15-webcam-in-colab/#disqus_thread</comments>
@@ -261,12 +283,39 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>OpenCV에 관한 정보</title>
+      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
+      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
+      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul><li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p><ul><li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li></ul></li><li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p><ul><li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/path/">path</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
       
     </item>
     
@@ -286,9 +335,9 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/#disqus_thread</comments>
@@ -311,41 +360,20 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Shape/">Shape</category>
+      <category domain="http://InhwanCho.github.io/tags/shape/">shape</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/reshape/">reshape</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/resize/">resize</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EB%B3%80%ED%99%98/">변환</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-shape/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>OpenCV에 관한 정보</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul><li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p><ul><li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li></ul></li><li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p><ul><li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/OpenCV/">OpenCV</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/Path/">Path</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
       
     </item>
     
@@ -365,11 +393,11 @@
       <category domain="http://InhwanCho.github.io/categories/Tensorflow/">Tensorflow</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/keras/">keras</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Deeplearning/">Deeplearning</category>
+      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Tensorflow/">Tensorflow</category>
+      <category domain="http://InhwanCho.github.io/tags/tensorflow/">tensorflow</category>
       
       <category domain="http://InhwanCho.github.io/tags/XAI/">XAI</category>
       
@@ -391,20 +419,18 @@
       <content:encoded><![CDATA[<h2 id="파이토치에서-만들어진-모델-정보-확인하기"><a href="#파이토치에서-만들어진-모델-정보-확인하기" class="headerlink" title="파이토치에서 만들어진 모델 정보 확인하기"></a>파이토치에서 만들어진 모델 정보 확인하기</h2><ul><li>keras에서는 <code>model.summary()</code>의 내장 함수를 이용하면 간단하게 모델 정보를 확인 가능합니다.</li><li>파이토치에서도 여러 가지 방법을 통해 정보를 확인할 수 있습니다.</li></ul><h3 id="1-print를-하면-summary가-출력된다"><a href="#1-print를-하면-summary가-출력된다" class="headerlink" title="1. print를 하면 summary가 출력된다"></a>1. <code>print</code>를 하면 summary가 출력된다</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(model)</span><br></pre></td></tr></table></figure><img width="943" alt="print 결과" src="https://user-images.githubusercontent.com/111936229/211247463-dffbfede-2625-4d50-b1f7-e48369abcc2f.png"><h3 id="2-torchinfo-통해-summary를-출력한다"><a href="#2-torchinfo-통해-summary를-출력한다" class="headerlink" title="2. torchinfo 통해 summary를 출력한다"></a>2. <code>torchinfo</code> 통해 summary를 출력한다</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">!pip install torchinfo</span><br><span class="line"><span class="keyword">from</span> torchinfo <span class="keyword">import</span> summary</span><br><span class="line"></span><br><span class="line">summary(model)</span><br></pre></td></tr></table></figure><img width="719" alt="torchinfo.summary 결과" src="https://user-images.githubusercontent.com/111936229/211247503-5e2ae136-14ec-4091-b65f-1cec173f4982.png"><h3 id="3-torchsummary를-통해-summary출력-input-size를-알아야만-출력-가능"><a href="#3-torchsummary를-통해-summary출력-input-size를-알아야만-출력-가능" class="headerlink" title="3. torchsummary를 통해 summary출력 (input_size를 알아야만 출력 가능)"></a>3. <code>torchsummary</code>를 통해 summary출력 (input_size를 알아야만 출력 가능)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">!pip install torchsummary</span><br><span class="line"><span class="keyword">from</span> torchsummary <span class="keyword">import</span> summary</span><br><span class="line"></span><br><span class="line">summary(model, input_size = (<span class="number">1</span>,<span class="number">28</span>,<span class="number">28</span>), batch_size= <span class="number">6</span>)</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/categories/Pytorch/">Pytorch</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Deeplearning/">Deeplearning</category>
+      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Pytorch/">Pytorch</category>
+      <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Torch/">Torch</category>
+      <category domain="http://InhwanCho.github.io/tags/model/">model</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Model/">Model</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/Summary/">Summary</category>
+      <category domain="http://InhwanCho.github.io/tags/summary/">summary</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/09/Study_folder/Pytorch/2023-01-09-model-info/#disqus_thread</comments>
@@ -417,24 +443,65 @@
       <guid>http://inhwancho.github.io/2023/01/08/Study_folder/NLP(Natural_Language_Processing)/2023-01-08-attention-imp/</guid>
       <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
       
-        
-        
-      <description>&lt;h2 id=&quot;스케일드-닷-프로덕트-어텐션&quot;&gt;&lt;a href=&quot;#스케일드-닷-프로덕트-어텐션&quot; class=&quot;headerlink&quot; title=&quot;스케일드 닷-프로덕트 어텐션&quot;&gt;&lt;/a&gt;스케일드 닷-프로덕트 어텐션&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;참조 : &amp;lt;&lt;a </description>
-        
+      <description>Click to read more in detail</description>
       
       
       
       <content:encoded><![CDATA[<h2 id="스케일드-닷-프로덕트-어텐션"><a href="#스케일드-닷-프로덕트-어텐션" class="headerlink" title="스케일드 닷-프로덕트 어텐션"></a>스케일드 닷-프로덕트 어텐션</h2><ul><li>참조 : &lt;<a href="https://wikidocs.net/31379">위키독스</a>&gt;</li><li>닷-프로덕트 어텐션(dot-product attention)에서 스케일링하는 것을 추가하면<br><br> <code>스케일드 닷-프로덕트 어텐션(Scaled dot-product Attention)</code>이라고 합니다</li><li>scaled_dot_product_attention을 tensorflow로 구현, 살펴보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">scaled_dot_product_attention</span>(<span class="params">query, key, value, mask</span>):</span><br><span class="line">  <span class="comment"># query 크기    : (batch_size, num_heads, query의 문장 길이, d_model/num_heads)</span></span><br><span class="line">  <span class="comment"># key 크기      : (batch_size, num_heads, key의 문장 길이,   d_model/num_heads)</span></span><br><span class="line">  <span class="comment"># value 크기    : (batch_size, num_heads, value의 문장 길이, d_model/num_heads)</span></span><br><span class="line">  <span class="comment"># padding_mask : (batch_size, 1, 1, key의 문장 길이)</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Q와 K의 곱. 어텐션 스코어 행렬.</span></span><br><span class="line">  matmul_qk = tf.matmul(query, key, transpose_b=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">  <span class="comment"># 스케일링</span></span><br><span class="line">  depth = tf.cast(tf.shape(key)[-<span class="number">1</span>], tf.float32)</span><br><span class="line">  logits = matmul_qk / tf.math.sqrt(depth)</span><br><span class="line"></span><br><span class="line">  <span class="comment"># 마스킹, 매우 작은 값이므로 소프트맥스 함수에 의해 0이 된다.</span></span><br><span class="line">  <span class="keyword">if</span> mask <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">    logits += (mask * -<span class="number">1e9</span>)</span><br><span class="line"></span><br><span class="line">  <span class="comment"># 소프트맥스 함수는 마지막 차원인 key의 문장 길이 방향으로 수행(axis=-1)</span></span><br><span class="line">  <span class="comment"># attention weight : (batch_size, num_heads, query의 문장 길이, key의 문장 길이)</span></span><br><span class="line">  attention_weights = tf.nn.softmax(logits, axis=-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">  <span class="comment"># output : (batch_size, num_heads, query의 문장 길이, d_model/num_heads)</span></span><br><span class="line">  output = tf.matmul(attention_weights, value)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> output, attention_weights</span><br></pre></td></tr></table></figure><h3 id="테스트"><a href="#테스트" class="headerlink" title="테스트"></a>테스트</h3><ul><li>temp_q의 값 [0, 10, 0]은 Key에 해당하는 temp_k의 두번째 값 [0, 10, 0]과 일치하게 설정</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># 임의의 Query, Key, Value인 Q, K, V 행렬 생성</span></span><br><span class="line">np.set_printoptions(suppress=<span class="literal">True</span>) <span class="comment">#옵션 넣어줘야 보기 편함(소수점 반올림)</span></span><br><span class="line">temp_k = tf.constant([[<span class="number">10</span>,<span class="number">0</span>,<span class="number">0</span>],</span><br><span class="line">                      [<span class="number">0</span>,<span class="number">10</span>,<span class="number">0</span>],</span><br><span class="line">                      [<span class="number">0</span>,<span class="number">0</span>,<span class="number">10</span>],</span><br><span class="line">                      [<span class="number">0</span>,<span class="number">0</span>,<span class="number">10</span>]], dtype=tf.float32)  <span class="comment"># (4, 3)</span></span><br><span class="line"></span><br><span class="line">temp_v = tf.constant([[<span class="number">1</span>,<span class="number">0</span>],</span><br><span class="line">                      [<span class="number">10</span>,<span class="number">0</span>],</span><br><span class="line">                      [<span class="number">100</span>,<span class="number">5</span>],</span><br><span class="line">                      [<span class="number">1000</span>,<span class="number">6</span>]], dtype=tf.float32)  <span class="comment"># (4, 2)</span></span><br><span class="line">temp_q = tf.constant([[<span class="number">0</span>, <span class="number">10</span>, <span class="number">0</span>]], dtype=tf.float32)  <span class="comment"># (1, 3) #transpose_b</span></span><br></pre></td></tr></table></figure><ul><li>어텐션 분포는 [0, 1, 0, 0]의 값을 가지며</li><li>Value의 두번째 값인 [10, 0]이 출력되는 것을 확인할 수 있습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 함수 실행</span></span><br><span class="line">temp_out, temp_attn = scaled_dot_product_attention(temp_q, temp_k, temp_v, <span class="literal">None</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(temp_attn) <span class="comment"># 어텐션 분포(어텐션 가중치의 나열)</span></span><br><span class="line"><span class="comment"># tf.Tensor([[0. 1. 0. 0.]], shape=(1, 4), dtype=float32)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(temp_out) <span class="comment"># 어텐션 값</span></span><br><span class="line"><span class="comment"># tf.Tensor([[10.  0.]], shape=(1, 2), dtype=float32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/categories/NLP/">NLP</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/NLP-Study/">NLP,Study</category>
+      <category domain="http://InhwanCho.github.io/tags/nlp/">nlp</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EC%9E%90%EC%97%B0%EC%96%B4/">자연어</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/attention/">attention</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/is/">is</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/all/">all</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/you/">you</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/need/">need</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/transformers/">transformers</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EA%B5%AC%ED%98%84/">구현</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/08/Study_folder/NLP(Natural_Language_Processing)/2023-01-08-attention-imp/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>torch를 boolean값으로 변경</title>
+      <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
+      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
+      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="operation-참조"><a href="#operation-참조" class="headerlink" title="operation 참조"></a>operation 참조</h2><ul><li>예시를 통해 알아보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x&gt;<span class="number">2</span>)</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((x&gt;<span class="number">2</span>).<span class="built_in">type</span>(torch.float32))</span><br><span class="line"><span class="comment"># tensor([0., 0., 1., 1.])</span></span><br></pre></td></tr></table></figure><h2 id="gt-함수를-활용"><a href="#gt-함수를-활용" class="headerlink" title="gt() 함수를 활용"></a>gt() 함수를 활용</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>))</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>).to(torch.int32))</span><br><span class="line"><span class="comment"># tensor([0, 0, 1, 1], dtype=torch.int32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Pytorch/">Pytorch</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/gt/">gt</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
       
     </item>
     
@@ -454,47 +521,18 @@
       <category domain="http://InhwanCho.github.io/categories/Tensorflow/">Tensorflow</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/tags/keras/">keras</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Deeplearning/">Deeplearning</category>
+      <category domain="http://InhwanCho.github.io/tags/study/">study</category>
       
-      <category domain="http://InhwanCho.github.io/tags/Tensorflow/">Tensorflow</category>
+      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/tensorflow/">tensorflow</category>
       
       <category domain="http://InhwanCho.github.io/tags/tf-cast/">tf.cast</category>
       
       
       <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>torch를 boolean값으로 변경</title>
-      <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
-      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
-      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="operation-참조"><a href="#operation-참조" class="headerlink" title="operation 참조"></a>operation 참조</h2><ul><li>예시를 통해 알아보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x&gt;<span class="number">2</span>)</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((x&gt;<span class="number">2</span>).<span class="built_in">type</span>(torch.float32))</span><br><span class="line"><span class="comment"># tensor([0., 0., 1., 1.])</span></span><br></pre></td></tr></table></figure><h2 id="gt-함수를-활용"><a href="#gt-함수를-활용" class="headerlink" title="gt() 함수를 활용"></a>gt() 함수를 활용</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>))</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>).to(torch.int32))</span><br><span class="line"><span class="comment"># tensor([0, 0, 1, 1], dtype=torch.int32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/Study/">Study</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/Deeplearning/">Deeplearning</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/Pytorch/">Pytorch</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/Torch/">Torch</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/Gt/">Gt</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
       
     </item>
     
@@ -514,9 +552,9 @@
       <category domain="http://InhwanCho.github.io/categories/Pytorch/">Pytorch</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
-      
       <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
       
       <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
       
@@ -540,14 +578,14 @@
       <content:encoded><![CDATA[<h2 id="torch-tril"><a href="#torch-tril" class="headerlink" title="torch.tril"></a>torch.tril</h2><ul><li><p><code>torch.tril(input, diagonal=0, *, out=None)</code></p></li><li><p>행렬의 아래쪽 삼각형 부분 (2 차원 텐서) 또는 행렬의 배치 input 을 반환합니다 .[행렬의 오른쪽 부분을(0으로 만듬)]</p></li><li><p>attention 구조의 mask를 만들 때 많이 사용되는 함수입니다.</p></li><li><p>무슨 말인지 이해가 잘 안가실겁니다. 예제 출력 코드를 보면 바로 이해가 갈겁니다.</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">a = torch.ones((<span class="number">5</span>, <span class="number">5</span>))</span><br><span class="line">torch.tril(a)</span><br><span class="line"></span><br><span class="line">tensor([[<span class="number">1.</span>, <span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">0.</span>, <span class="number">0.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">0.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>]])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">a = torch.ones((<span class="number">5</span>, <span class="number">5</span>))</span><br><span class="line">torch.tril(a, diagonal=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">tensor([[<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">0.</span>, <span class="number">0.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">0.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>],</span><br><span class="line">        [<span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>, <span class="number">1.</span>]])</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
-      <category domain="http://InhwanCho.github.io/categories/Study/">Study</category>
+      <category domain="http://InhwanCho.github.io/categories/Pytorch/">Pytorch</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
+      <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
       
       <category domain="http://InhwanCho.github.io/tags/study/">study</category>
       
-      <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
+      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
       
       <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
       
