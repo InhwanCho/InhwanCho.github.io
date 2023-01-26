@@ -33,7 +33,119 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="Inhwan's Digital Space" type="application/rss+xml">
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/rss2.xml" title="Inhwan's Digital Space" type="application/rss+xml">
 </head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Inhwan&#039;s Digital Space</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/InhwanCho"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-7-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-18T06:23:12.874Z" title="Invalid Date">2023-01-18</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-19T23:50:27.726Z" title="2023. 1. 20. 오전 8:50:27">2023-01-20</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">2 minutes read (About 284 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">OpenCV 얼굴, 눈 등 특정 객체 검출</h1><div class="content"><h2 id="정면-얼굴-검출"><a href="#정면-얼굴-검출" class="headerlink" title="정면 얼굴 검출"></a>정면 얼굴 검출</h2><ol>
 <li><code>haarcascade file</code> 사용</li>
 </ol>
@@ -42,7 +154,7 @@
 <li>이 파일은 다른 사람들이 이미 얼굴을 검출하는 학습을 해둔 파일이며 이를 이용하면 편하게 얼굴을 인식할 수 있습니다.</li>
 <li>&lt;<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/opencv/opencv/tree/master/data/haarcascades">opencv-data-haarcascades</a>&gt;</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">faceCascade = cv2.CascadeClassifier(<span class="string">&#x27;Resources/haarcascade_frontalface_default.xml&#x27;</span>)</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;Resources/lena.png&#x27;</span>)</span><br><span class="line">imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line">faces = faceCascade.detectMultiScale(imgGray,<span class="number">1.1</span>,<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (x,y,w,h) <span class="keyword">in</span> faces:</span><br><span class="line">    cv2.rectangle(img, (x,y), (x+w, y+h), (<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>), <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;result&#x27;</span>,img)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">faceCascade = cv2.CascadeClassifier(<span class="string">'Resources/haarcascade_frontalface_default.xml'</span>)</span><br><span class="line">img = cv2.imread(<span class="string">'Resources/lena.png'</span>)</span><br><span class="line">imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line">faces = faceCascade.detectMultiScale(imgGray,<span class="number">1.1</span>,<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (x,y,w,h) <span class="keyword">in</span> faces:</span><br><span class="line">    cv2.rectangle(img, (x,y), (x+w, y+h), (<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>), <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">'result'</span>,img)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 
 <img width="505" alt="얼굴 인식" src="https://user-images.githubusercontent.com/111936229/213099837-c577eb63-1dab-433f-8e14-d48ca4309471.png">
 
@@ -52,7 +164,7 @@
 <ul>
 <li>haarcascade와 방법은 유사합니다</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">faceBox</span>(<span class="params">faceNet, frame</span>):</span><br><span class="line">    </span><br><span class="line">    frameWidth = frame.shape[<span class="number">1</span>]</span><br><span class="line">    frameHeight = frame.shape[<span class="number">0</span>]</span><br><span class="line">    blob = cv2.dnn.blobFromImage(frame, <span class="number">1.0</span>, (<span class="number">227</span>,<span class="number">227</span>), [<span class="number">104</span>,<span class="number">117</span>,<span class="number">123</span>], swapRB=<span class="literal">False</span>)</span><br><span class="line">    faceNet.setInput(blob)</span><br><span class="line">    detection = faceNet.forward()</span><br><span class="line">    bboxs = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(detection.shape[<span class="number">2</span>]):</span><br><span class="line">        confidence = detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">2</span>]</span><br><span class="line">        <span class="keyword">if</span> confidence &gt; <span class="number">0.7</span> :</span><br><span class="line">            x1 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">3</span>] * frameWidth)</span><br><span class="line">            y1 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">4</span>] * frameHeight) </span><br><span class="line">            x2 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">5</span>] * frameWidth)</span><br><span class="line">            y2 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">6</span>] * frameHeight)</span><br><span class="line">            bboxs.append([x1,y1,x2,y2])</span><br><span class="line">            cv2.rectangle(frame, (x1,y1), (x2,y2), (<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>),<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> frame, bboxs</span><br><span class="line"></span><br><span class="line">faceProto = <span class="string">&quot;opencv_face_detector.pbtxt&quot;</span></span><br><span class="line">faceModel = <span class="string">&quot;opencv_face_detector_uint8.pb&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">faceNet = cv2.dnn.readNet(faceModel, faceProto)</span><br><span class="line">video = cv2.VideoCapture(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">padding = <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    ret, frame = video.read()</span><br><span class="line">    frame, bboxs = faceBox(faceNet, frame)</span><br><span class="line">    </span><br><span class="line">    detect = faceBox(faceNet, frame)</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;age_gender&#x27;</span>,frame)</span><br><span class="line">    k = cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">if</span> k == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">video.release()</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">faceBox</span>(<span class="params">faceNet, frame</span>):</span><br><span class="line">    </span><br><span class="line">    frameWidth = frame.shape[<span class="number">1</span>]</span><br><span class="line">    frameHeight = frame.shape[<span class="number">0</span>]</span><br><span class="line">    blob = cv2.dnn.blobFromImage(frame, <span class="number">1.0</span>, (<span class="number">227</span>,<span class="number">227</span>), [<span class="number">104</span>,<span class="number">117</span>,<span class="number">123</span>], swapRB=<span class="literal">False</span>)</span><br><span class="line">    faceNet.setInput(blob)</span><br><span class="line">    detection = faceNet.forward()</span><br><span class="line">    bboxs = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(detection.shape[<span class="number">2</span>]):</span><br><span class="line">        confidence = detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">2</span>]</span><br><span class="line">        <span class="keyword">if</span> confidence &gt; <span class="number">0.7</span> :</span><br><span class="line">            x1 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">3</span>] * frameWidth)</span><br><span class="line">            y1 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">4</span>] * frameHeight) </span><br><span class="line">            x2 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">5</span>] * frameWidth)</span><br><span class="line">            y2 = <span class="built_in">int</span>(detection[<span class="number">0</span>,<span class="number">0</span>,i,<span class="number">6</span>] * frameHeight)</span><br><span class="line">            bboxs.append([x1,y1,x2,y2])</span><br><span class="line">            cv2.rectangle(frame, (x1,y1), (x2,y2), (<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>),<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> frame, bboxs</span><br><span class="line"></span><br><span class="line">faceProto = <span class="string">"opencv_face_detector.pbtxt"</span></span><br><span class="line">faceModel = <span class="string">"opencv_face_detector_uint8.pb"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">faceNet = cv2.dnn.readNet(faceModel, faceProto)</span><br><span class="line">video = cv2.VideoCapture(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">padding = <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    ret, frame = video.read()</span><br><span class="line">    frame, bboxs = faceBox(faceNet, frame)</span><br><span class="line">    </span><br><span class="line">    detect = faceBox(faceNet, frame)</span><br><span class="line">    cv2.imshow(<span class="string">'age_gender'</span>,frame)</span><br><span class="line">    k = cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">if</span> k == <span class="built_in">ord</span>(<span class="string">'q'</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">video.release()</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
 </div><div class="article-licensing box"><div class="licensing-title"><p>OpenCV 얼굴, 눈 등 특정 객체 검출</p><p><a href="http://inhwancho.github.io/2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/">http://inhwancho.github.io/2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>InhwanCho</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2023-01-18</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2023-01-20</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="external nofollow noopener noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="external nofollow noopener noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="external nofollow noopener noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Study/">Study</a><a class="link-muted mr-2" rel="tag" href="/tags/OpenCV/">OpenCV</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/01/19/Study_folder/OpneCV/2023-01-19-face-recognizion/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">OpenCV로 아는 얼굴인지 확인하기</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/01/18/Study_folder/OpneCV/2023-01-18-contour/"><span class="level-item">OpenCV 윤곽선 검출</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
             this.page.url = 'http://inhwancho.github.io/2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/';
             this.page.identifier = '2023/01/18/Study_folder/OpneCV/2023-01-18-haarscascade/';

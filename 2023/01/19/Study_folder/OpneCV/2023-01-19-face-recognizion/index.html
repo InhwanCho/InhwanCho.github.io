@@ -33,11 +33,123 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="Inhwan's Digital Space" type="application/rss+xml">
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/rss2.xml" title="Inhwan's Digital Space" type="application/rss+xml">
 </head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Inhwan&#039;s Digital Space</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/InhwanCho"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-7-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-19T04:16:37.117Z" title="Invalid Date">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-19T04:18:09.165Z" title="2023. 1. 19. 오후 1:18:09">2023-01-19</time></span><span class="level-item"><a class="link-muted" href="/categories/OpenCV/">OpenCV</a></span><span class="level-item">a minute read (About 146 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">OpenCV로 아는 얼굴인지 확인하기</h1><div class="content"><ul>
 <li>예제 코드</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> face_recognition</span><br><span class="line"></span><br><span class="line">imgElon = face_recognition.load_image_file(<span class="string">&#x27;elon1.png&#x27;</span>)</span><br><span class="line">imgTest = face_recognition.load_image_file(<span class="string">&#x27;surprised_man.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line">imgTest = cv2.cvtColor(imgTest,cv2.COLOR_BGR2RGB)</span><br><span class="line">imgElon = cv2.cvtColor(imgElon,cv2.COLOR_BGR2RGB)</span><br><span class="line"></span><br><span class="line">faceLoc = face_recognition.face_locations(imgElon)[<span class="number">0</span>]</span><br><span class="line">encodeElon = face_recognition.face_encodings(imgElon)[<span class="number">0</span>]</span><br><span class="line">cv2.rectangle(imgElon,(faceLoc[<span class="number">1</span>],faceLoc[<span class="number">2</span>]),(faceLoc[<span class="number">3</span>],faceLoc[<span class="number">0</span>]),(<span class="number">255</span>,<span class="number">0</span>,<span class="number">255</span>),<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(faceLoc) <span class="comment"># (118, 304, 304, 118) top, right, bottom, left</span></span><br><span class="line"></span><br><span class="line">faceLocTest = face_recognition.face_locations(imgTest)[<span class="number">0</span>]</span><br><span class="line">encodeTest = face_recognition.face_encodings(imgTest)[<span class="number">0</span>]</span><br><span class="line">cv2.rectangle(imgTest,(faceLocTest[<span class="number">1</span>],faceLocTest[<span class="number">2</span>]),(faceLocTest[<span class="number">3</span>],faceLocTest[<span class="number">0</span>]),(<span class="number">255</span>,<span class="number">0</span>,<span class="number">255</span>),<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">results = face_recognition.compare_faces([encodeElon], encodeTest)</span><br><span class="line">faceDis = face_recognition.face_distance([encodeElon], encodeTest)</span><br><span class="line"><span class="built_in">print</span>(results, faceDis)</span><br><span class="line">cv2.putText(imgTest, <span class="string">f&#x27;<span class="subst">&#123;results&#125;</span> <span class="subst">&#123;<span class="built_in">round</span>(faceDis[<span class="number">0</span>],<span class="number">2</span>)&#125;</span>&#x27;</span>, (<span class="number">50</span>,<span class="number">50</span>), cv2.FONT_HERSHEY_COMPLEX,<span class="number">1</span>,</span><br><span class="line">                            (<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>),<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;imtest&#x27;</span>,imgTest)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;imelon&#x27;</span>,imgElon)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> face_recognition</span><br><span class="line"></span><br><span class="line">imgElon = face_recognition.load_image_file(<span class="string">'elon1.png'</span>)</span><br><span class="line">imgTest = face_recognition.load_image_file(<span class="string">'surprised_man.jpg'</span>)</span><br><span class="line"></span><br><span class="line">imgTest = cv2.cvtColor(imgTest,cv2.COLOR_BGR2RGB)</span><br><span class="line">imgElon = cv2.cvtColor(imgElon,cv2.COLOR_BGR2RGB)</span><br><span class="line"></span><br><span class="line">faceLoc = face_recognition.face_locations(imgElon)[<span class="number">0</span>]</span><br><span class="line">encodeElon = face_recognition.face_encodings(imgElon)[<span class="number">0</span>]</span><br><span class="line">cv2.rectangle(imgElon,(faceLoc[<span class="number">1</span>],faceLoc[<span class="number">2</span>]),(faceLoc[<span class="number">3</span>],faceLoc[<span class="number">0</span>]),(<span class="number">255</span>,<span class="number">0</span>,<span class="number">255</span>),<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(faceLoc) <span class="comment"># (118, 304, 304, 118) top, right, bottom, left</span></span><br><span class="line"></span><br><span class="line">faceLocTest = face_recognition.face_locations(imgTest)[<span class="number">0</span>]</span><br><span class="line">encodeTest = face_recognition.face_encodings(imgTest)[<span class="number">0</span>]</span><br><span class="line">cv2.rectangle(imgTest,(faceLocTest[<span class="number">1</span>],faceLocTest[<span class="number">2</span>]),(faceLocTest[<span class="number">3</span>],faceLocTest[<span class="number">0</span>]),(<span class="number">255</span>,<span class="number">0</span>,<span class="number">255</span>),<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">results = face_recognition.compare_faces([encodeElon], encodeTest)</span><br><span class="line">faceDis = face_recognition.face_distance([encodeElon], encodeTest)</span><br><span class="line"><span class="built_in">print</span>(results, faceDis)</span><br><span class="line">cv2.putText(imgTest, <span class="string">f'<span class="subst">{results}</span> <span class="subst">{<span class="built_in">round</span>(faceDis[<span class="number">0</span>],<span class="number">2</span>)}</span>'</span>, (<span class="number">50</span>,<span class="number">50</span>), cv2.FONT_HERSHEY_COMPLEX,<span class="number">1</span>,</span><br><span class="line">                            (<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>),<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">'imtest'</span>,imgTest)</span><br><span class="line">cv2.imshow(<span class="string">'imelon'</span>,imgElon)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>results가 True면 동일 인물, False면 다른 인물로 판단</li>

@@ -33,11 +33,123 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="Inhwan's Digital Space" type="application/rss+xml">
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/rss2.xml" title="Inhwan's Digital Space" type="application/rss+xml">
 </head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Inhwan&#039;s Digital Space</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/InhwanCho"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-7-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time datetime="2023-01-20T02:22:22.012Z" title="Invalid Date">2023-01-20</time></span><span class="level-item">Updated&nbsp;<time datetime="2023-01-23T02:04:24.499Z" title="2023. 1. 23. 오전 11:04:24">2023-01-23</time></span><span class="level-item"><a class="link-muted" href="/categories/Colab/">Colab</a></span><span class="level-item">2 minutes read (About 249 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">코랩(colab)에서 kaggle(캐글) 데이터 바로 다운받기</h1><div class="content"><h2 id="코랩에서-캐글-데이터를-바로-다운받는-방법"><a href="#코랩에서-캐글-데이터를-바로-다운받는-방법" class="headerlink" title="코랩에서 캐글 데이터를 바로 다운받는 방법"></a>코랩에서 캐글 데이터를 바로 다운받는 방법</h2><ul>
 <li>kaggle 홈페이지의 오른쪽 프로필 -&gt; account -&gt; <code>create new api token</code> 누른 후 다운로드</li>
 <li><code>kaggle.json</code> 파일을 업로드</li>
-<li>맥북 로컬은 ~&#x2F;.kaggle에 파일을 옮겨서 사용하면 됩니다.</li>
+<li>맥북 로컬은 ~/.kaggle에 파일을 옮겨서 사용하면 됩니다.</li>
 </ul>
 <img width="372" alt="캐글 오른쪽 프로필에서 Account 선택" src="https://user-images.githubusercontent.com/111936229/213606040-175f1dbd-c3a2-427f-9f06-501c8be91424.png">
 
@@ -45,7 +157,7 @@
 <img width="740" alt="Create New API Token 선택" src="https://user-images.githubusercontent.com/111936229/213606034-20d2da24-2a46-44ad-bfc7-bffb9618ff84.png">
 
 
-<figure class="highlight clean"><figcaption><span>in colab</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># <span class="keyword">import</span> kaggle # 요즘은 <span class="keyword">import</span> kaggle을 안해도 됩니다.</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> files</span><br><span class="line"></span><br><span class="line">files.upload()</span><br><span class="line"></span><br><span class="line"># api token(kaggle.json 파일)을 <span class="string">&#x27;파일 선택&#x27;</span> 눌러서 업로드</span><br></pre></td></tr></table></figure>
+<figure class="highlight clean"><figcaption><span>in colab</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># <span class="keyword">import</span> kaggle # 요즘은 <span class="keyword">import</span> kaggle을 안해도 됩니다.</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> files</span><br><span class="line"></span><br><span class="line">files.upload()</span><br><span class="line"></span><br><span class="line"># api token(kaggle.json 파일)을 <span class="string">'파일 선택'</span> 눌러서 업로드</span><br></pre></td></tr></table></figure>
 
 
 <figure class="highlight bash"><figcaption><span>in colab</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .kaggle 폴더 생성</span></span><br><span class="line">!<span class="built_in">mkdir</span> -p ~/.kaggle</span><br><span class="line"><span class="comment"># json파일 .kaggle로 복사</span></span><br><span class="line">!<span class="built_in">cp</span> kaggle.json ~/.kaggle/</span><br><span class="line"><span class="comment"># Permission Warning이 발생하지 않도록 해줍니다.</span></span><br><span class="line">!<span class="built_in">chmod</span> 600 ~/.kaggle/kaggle.json</span><br><span class="line"><span class="comment"># 내가 참가한 대회 리스트 확인(옵션)</span></span><br><span class="line"><span class="comment"># !kaggle competitions list</span></span><br></pre></td></tr></table></figure>
