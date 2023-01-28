@@ -467,9 +467,9 @@
       
       <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
       
-      <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
-      
       <category domain="http://InhwanCho.github.io/tags/model/">model</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
       
       <category domain="http://InhwanCho.github.io/tags/summary/">summary</category>
       
@@ -518,35 +518,6 @@
     </item>
     
     <item>
-      <title>torch를 boolean값으로 변경</title>
-      <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
-      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
-      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="operation-참조"><a href="#operation-참조" class="headerlink" title="operation 참조"></a>operation 참조</h2><ul><li>예시를 통해 알아보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x&gt;<span class="number">2</span>)</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((x&gt;<span class="number">2</span>).<span class="built_in">type</span>(torch.float32))</span><br><span class="line"><span class="comment"># tensor([0., 0., 1., 1.])</span></span><br></pre></td></tr></table></figure><h2 id="gt-함수를-활용"><a href="#gt-함수를-활용" class="headerlink" title="gt() 함수를 활용"></a>gt() 함수를 활용</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>))</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>).to(torch.int32))</span><br><span class="line"><span class="comment"># tensor([0, 0, 1, 1], dtype=torch.int32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Pytorch/">Pytorch</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/gt/">gt</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>tf.cast()</title>
       <link>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</link>
       <guid>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</guid>
@@ -574,6 +545,35 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>torch를 boolean값으로 변경</title>
+      <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
+      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
+      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="operation-참조"><a href="#operation-참조" class="headerlink" title="operation 참조"></a>operation 참조</h2><ul><li>예시를 통해 알아보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x&gt;<span class="number">2</span>)</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((x&gt;<span class="number">2</span>).<span class="built_in">type</span>(torch.float32))</span><br><span class="line"><span class="comment"># tensor([0., 0., 1., 1.])</span></span><br></pre></td></tr></table></figure><h2 id="gt-함수를-활용"><a href="#gt-함수를-활용" class="headerlink" title="gt() 함수를 활용"></a>gt() 함수를 활용</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>))</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>).to(torch.int32))</span><br><span class="line"><span class="comment"># tensor([0, 0, 1, 1], dtype=torch.int32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Pytorch/">Pytorch</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/gt/">gt</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
       
     </item>
     
