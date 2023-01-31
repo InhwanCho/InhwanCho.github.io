@@ -9,8 +9,68 @@
     <atom:link href="http://inhwancho.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I&#39;m Learning ML/DL</description>
-    <pubDate>Fri, 27 Jan 2023 15:00:00 GMT</pubDate>
+    <pubDate>Mon, 30 Jan 2023 15:00:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>VScode에서 유용한 정보</title>
+      <link>http://inhwancho.github.io/2023/01/31/Mac_Fundamental_Concept/2023-01-31-vscode/</link>
+      <guid>http://inhwancho.github.io/2023/01/31/Mac_Fundamental_Concept/2023-01-31-vscode/</guid>
+      <pubDate>Mon, 30 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="여러-단어를-다중-선택할-경우"><a href="#여러-단어를-다중-선택할-경우" class="headerlink" title="여러 단어를 다중 선택할 경우"></a>여러 단어를 다중 선택할 경우</h2><p><code>command(윈도우는 control) + shift + L</code> 은 선택된 단어와 동일한 단어를 <code>모두</code> 선택하는 단축키</p><p><code>command(윈도우는 control) + d</code> 은 선택된 단어와 동일한 단어를 <code>1개씩</code> 추가하는 단축키</p><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li>(보기 -&gt; <code>명령 팔레트</code>)를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다.</li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/VScode/">VScode</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/">단축키</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EA%B2%BD%EB%A1%9C/">경로</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EC%97%AC%EB%9F%AC/">여러</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EB%8B%A8%EC%96%B4/">단어</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EC%84%A0%ED%83%9D/">선택</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/%EB%8B%A4%EC%A4%91/">다중</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/31/Mac_Fundamental_Concept/2023-01-31-vscode/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Mac에서 ls -al에서의 의미</title>
+      <link>http://inhwancho.github.io/2023/01/29/Mac_Fundamental_Concept/2023-01-29-mac/</link>
+      <guid>http://inhwancho.github.io/2023/01/29/Mac_Fundamental_Concept/2023-01-29-mac/</guid>
+      <pubDate>Sat, 28 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">❯ ls -la</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">648개의 파일(폴더 포함)이 있다는 의미</span></span><br><span class="line">total 648</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">현재 명령어를 실행한 폴더가 있다는 의미(무조건 나옴)</span></span><br><span class="line">drwxr-xr-x  18 inhwan  staff     576  1 24 12:18 .</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">현재 명령어를 실행한 폴더의 상위 폴더가 있다는 의미(무조건 나옴)</span></span><br><span class="line">drwxr-xr-x   4 inhwan  staff     128  1 23 21:23 ..</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-rw-r--r--@  1 inhwan  staff    6148  1 25 09:40 .DS_Store</span><br><span class="line">drwxr-xr-x   3 inhwan  staff      96  1 23 20:59 .ipynb_checkpoints</span><br><span class="line">-rw-r--r--   1 inhwan  staff    3321  1 23 19:26 README.md</span><br><span class="line">drwxr-xr-x   8 inhwan  staff     256  1 23 19:31 __pycache__</span><br></pre></td></tr></table></figure><p>맨 앞의 <code>drwxr-xr-x</code>이런 문자열들은 권한을 의미<br>그 다음의 <code>inhwan</code>은 파일(폴더 포함)의 소유자가 누군지<br>그 뒤 <code>staff</code>는 소유자의 그룹이 어디인지를 의미<br>그 다음의 <code>576</code> 등의 큰 숫자는 파일의 크기를 의미</p><h2 id="리다이렉션-Redirection"><a href="#리다이렉션-Redirection" class="headerlink" title="리다이렉션(Redirection)"></a>리다이렉션(Redirection)</h2><p><code>&gt;</code> 와 <code>&lt;</code> 의 기호로 표현되며 입-출력 위치를 변경해줍니다.</p><p>예를 들어 ls -la를 하면 기본적으로 터미널에 출력이 되지만, ls -la &gt; test_file.txt 로 입력을 하면<br>test_file.txt라는 파일이 생성되며 출력 결과가 test_file.txt에 생성됩니다.</p><p><code>&gt;&gt;</code>를 사용하게 된다면 ls -la &gt;&gt; test_file.txt의 경우<br>기존의 test_file.txt 내용에 추가적으로 ls -la의 내용이 생성됩니다.(덮어씌우기가 아닌 추가)</p><h2 id="파이프-Pipe"><a href="#파이프-Pipe" class="headerlink" title="파이프(Pipe)"></a>파이프(Pipe)</h2><p><code>|</code> 기호로 표현되며 출력되는 위치를 다른 명령어로 넘어가게 해주는 표현</p><p>예를 들어 ls -la를 입력하면 너무 많은 정보가 나오게 되는데<br>특정 단어 <code>data</code>라는 게 들어있는 값만 찾으려 한다면 다음과 같이 사용하면 됩니다</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ls -la | grep data</span><br><span class="line"></span><br><span class="line"># 출력 결과</span><br><span class="line">-rw-r--r--   1 inhwan  staff    2248  1 23 19:26 data_loaders.py</span><br><span class="line">drwxr-xr-x   8 inhwan  staff     256  1 23 19:31 dataset</span><br></pre></td></tr></table></figure><h3 id="권한에-대한-설명"><a href="#권한에-대한-설명" class="headerlink" title="권한에 대한 설명"></a>권한에 대한 설명</h3><p><code>chmod</code>를 활용하여 권한을 수정 할 수 있습니다.</p><p><code>chmod -option 777 file_name</code>을 입력하면 file_name에 대해 모든 권한을 전부 준다는 의미입니다.</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1은 실행 권한, 2는 쓰기 권한, 4는 읽기 권한을 나타냅니다</span><br><span class="line"></span><br><span class="line">r: 읽기 권한, w: 쓰기 권한 x: 실행 권한 이라 부른다.</span><br><span class="line"></span><br><span class="line">chmode 777 file_name을 입력하면 user, group, other에게 모든 권한을 전부 준다는 의미</span><br><span class="line">따라서, user권한(1+2+4) group권한(1+2+4) other권한(1+2+4)</span><br><span class="line">1(읽기 가능) + 2(쓰기 가능) + 4(실행 가능) == 7</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/Mac/">Mac</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/mac/">mac</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/setting/">setting</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/29/Mac_Fundamental_Concept/2023-01-29-mac/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>파이썬에서 기호 *과 **의 의미</title>
@@ -148,11 +208,11 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/study/">study</category>
-      
       <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
       <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/study/">study</category>
       
       <category domain="http://InhwanCho.github.io/tags/face-recognition/">face_recognition</category>
       
@@ -504,9 +564,9 @@
       
       <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
       
-      <category domain="http://InhwanCho.github.io/tags/model/">model</category>
-      
       <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/model/">model</category>
       
       <category domain="http://InhwanCho.github.io/tags/summary/">summary</category>
       
@@ -551,66 +611,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/08/Study_folder/NLP(Natural_Language_Processing)/2023-01-08-attention-imp/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>tf.cast()</title>
-      <link>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</link>
-      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</guid>
-      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="tf-cast-x-dtype-name-x3D-None"><a href="#tf-cast-x-dtype-name-x3D-None" class="headerlink" title="tf.cast(x, dtype, name&#x3D;None)"></a>tf.cast(x, dtype, name&#x3D;None)</h2><blockquote><p>The operation casts x (in case of Tensor) or x.values (in case of SparseTensor or IndexedSlices) to dtype.<br><br>해석하자면 x값을 새로운 형태의 dtype으로 캐스팅한다는 의미입니다.</p></blockquote><ul><li><p>부동 소수점형에서 정수형으로 바꾼 경우 소수점을 버린다.</p></li><li><p>Boolean으로 참조한 경우 True이면 1, False이면 0을 출력한다.</p></li><li><p>예시를 보면 이해가 될겁니다.</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x = tf.constant([<span class="number">1.8</span>, <span class="number">2.2</span>, <span class="number">3.3</span>], dtype=tf.float32)</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="comment"># tf.Tensor([1.8 2.2 3.3], shape=(3,), dtype=float32)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x, tf.int32)</span><br><span class="line"><span class="comment"># 출력 결과를 보시면 반올림, 내림이 아닌 소수점을 버립니다.</span></span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=int32, numpy=array([1, 2, 3], dtype=int32)&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tf.cast(x&gt;<span class="number">2</span>, tf.float32)</span><br><span class="line"><span class="comment"># &lt;tf.Tensor: shape=(3,), dtype=float32, numpy=array([0., 1., 1.], dtype=float32)&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Tensorflow/">Tensorflow</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/tensorflow/">tensorflow</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/keras/">keras</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/study/">study</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/tf-cast/">tf.cast</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>torch를 boolean값으로 변경</title>
-      <link>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</link>
-      <guid>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</guid>
-      <pubDate>Sat, 07 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="operation-참조"><a href="#operation-참조" class="headerlink" title="operation 참조"></a>operation 참조</h2><ul><li>예시를 통해 알아보겠습니다.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x&gt;<span class="number">2</span>)</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((x&gt;<span class="number">2</span>).<span class="built_in">type</span>(torch.float32))</span><br><span class="line"><span class="comment"># tensor([0., 0., 1., 1.])</span></span><br></pre></td></tr></table></figure><h2 id="gt-함수를-활용"><a href="#gt-함수를-활용" class="headerlink" title="gt() 함수를 활용"></a>gt() 함수를 활용</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">x=torch.tensor([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>))</span><br><span class="line"><span class="comment"># tensor([False, False,  True,  True])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.gt(<span class="number">2</span>).to(torch.int32))</span><br><span class="line"><span class="comment"># tensor([0, 0, 1, 1], dtype=torch.int32)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/Pytorch/">Pytorch</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/deeplearning/">deeplearning</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/torch/">torch</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/pytorch/">pytorch</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/gt/">gt</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/#disqus_thread</comments>
       
     </item>
     
