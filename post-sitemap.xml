@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>http://InhwanCho.github.io/2023/02/09/Paper_Review/2023-02-09-RCNN/</loc>
+        <lastmod>2023-02-08T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://InhwanCho.github.io/2023/01/31/Mac_Fundamental_Concept/2023-01-31-vscode/</loc>
         <lastmod>2023-01-30T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -105,7 +113,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/18/Error_fix/2022-12-18-error-logs/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/13/Blogs_folder/2023-01-13-blogmoving/</loc>
         <lastmod>2023-01-12T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -113,7 +121,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/13/Blogs_folder/2023-01-13-blogmoving/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/18/Error_fix/2022-12-18-error-logs/</loc>
         <lastmod>2023-01-12T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -449,7 +457,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-19-escape-sequence/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-18-Pillow/</loc>
         <lastmod>2022-12-17T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -457,7 +465,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-18-Pillow/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-19-escape-sequence/</loc>
         <lastmod>2022-12-17T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -561,7 +569,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/11/Blogs_folder/2022-12-11-Git-info/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/11/Blogs_folder/2022-12-11-Git-command/</loc>
         <lastmod>2022-12-10T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -569,7 +577,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/11/Blogs_folder/2022-12-11-Git-command/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/11/Blogs_folder/2022-12-11-Git-info/</loc>
         <lastmod>2022-12-10T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -609,7 +617,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-KoGPT2_chatbot/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-BERT_fine_intro/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -617,7 +625,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-BERT_fine_intro/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-KoGPT2_chatbot/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -665,7 +673,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/03/Error_fix/2022-12-03-pytorch-installerror/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-Symbolic-Link/</loc>
         <lastmod>2022-12-02T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -673,7 +681,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/22/Colab_folder/2022-11-22-Symbolic-Link/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/03/Error_fix/2022-12-03-pytorch-installerror/</loc>
         <lastmod>2022-12-02T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -777,7 +785,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-Scaling/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-OneHotEncoder/</loc>
         <lastmod>2022-11-20T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -785,7 +793,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-OneHotEncoder/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/21/Study_folder/ML(Machin_Learning)/2022-11-21-Scaling/</loc>
         <lastmod>2022-11-20T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
