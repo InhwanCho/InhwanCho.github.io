@@ -14,15 +14,15 @@
     
     <item>
       <title>Transformer(Attention is all you need)</title>
-      <link>http://inhwancho.github.io/2023/08/03/Paper_Review/2023-07-16-test%20copy/</link>
-      <guid>http://inhwancho.github.io/2023/08/03/Paper_Review/2023-07-16-test%20copy/</guid>
+      <link>http://inhwancho.github.io/2023/08/03/Paper_Review/2023-08-09-transformer/</link>
+      <guid>http://inhwancho.github.io/2023/08/03/Paper_Review/2023-08-09-transformer/</guid>
       <pubDate>Wed, 02 Aug 2023 15:00:00 GMT</pubDate>
       
       <description>Click to read more in detail</description>
       
       
       
-      <content:encoded><![CDATA[<p>NLP분야에서, 기존의 RNN에서의 한계때문에 [Context vector의 크기가 제한적이기 때문에 문장의 모든 정보를 보낼 수 없음]<br>seq2seq모델(문장을 입력받아 문장을 출력해주는)에서 RNN대신 제안된 모델이 Attention이라는 모델입니다.<br>이 Attention을 통해 만든 Transformer 분석해보겠습니다.</p><h3 id="참고-문헌"><a href="#참고-문헌" class="headerlink" title="참고 문헌"></a>참고 문헌</h3><p>Transformer에 관한 글</p><p><a href="https://arxiv.org/abs/1706.03762" title="Transformer 논문">Transformer 논문</a><br><a href="https://www.youtube.com/watch?v=Yk1tV_cXMMU&list=PLetSlH8YjIfVzHuSXtG4jAC2zbEAErXWm&index=17" title="고려대 유튜브">고려대 유튜브</a><br><a href="https://jalammar.github.io/illustrated-transformer/" title="Jay alammar blog">Jay alammar 블로그</a></p><img width="700" alt="Transformer 구조" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/3ced3af7-c1af-4dfc-9b1f-ca6fa3d4f67f"><p>위 그림은 Transformer의 구조입니다.</p><p>그림의 왼쪽 부분은 Encoder, 오른쪽 부분은 Decoder부분입니다.<br>먼저, 왼쪽의 빨간색 박스의 inputs이 어떻게 들어가는지 확인해보겠습니다.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>NLP분야에서, 기존의 RNN에서의 한계때문에<br>[Context vector의 크기가 제한적이기 때문에 문장의 모든 정보를 보낼 수 없음 &#x3D;&#x3D;long term dependency problem]<br>seq2seq모델(문장을 입력받아 문장을 출력해주는)에서 RNN대신 제안된 모델이 Attention이라는 모델입니다.<br>이 Attention을 통해 만든 Transformer 분석해보겠습니다.</p><h3 id="참고-문헌-Transformer에-관한-글"><a href="#참고-문헌-Transformer에-관한-글" class="headerlink" title="참고 문헌(Transformer에 관한 글)"></a>참고 문헌(Transformer에 관한 글)</h3><p><a href="https://arxiv.org/abs/1706.03762" title="Transformer 논문">Transformer 논문</a><br><a href="https://www.youtube.com/watch?v=Yk1tV_cXMMU&list=PLetSlH8YjIfVzHuSXtG4jAC2zbEAErXWm&index=17" title="고려대 유튜브">고려대 유튜브</a><br><a href="https://jalammar.github.io/illustrated-transformer/" title="Jay alammar blog">Jay alammar 블로그</a></p><img width="700" alt="Transformer 구조" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/3ced3af7-c1af-4dfc-9b1f-ca6fa3d4f67f"><p>그림의 왼쪽 부분은 Encoder, 오른쪽 부분은 Decoder부분입니다.<br>먼저, 왼쪽의 빨간색 박스의 inputs이 어떻게 들어가는지 확인해보겠습니다.</p><img width="700" alt="Transformer의 inputs" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/71671c01-b56c-47f1-a2ae-55e02990c7b9"><p>먼저 input으로 문장이 들어오면 (“je suis etudiant”)</p><p>문장 -&gt; 단어로 변경 (“je”, “suis”, “etudiant”) -&gt;<br>토큰화 -&gt; embedding[x1, x2, x3]해 줍니다.</p><p>그 후 positional encoding 값[t1, t2, t3]을 더해 최종 input값인 [x1, x2, x3]를 얻게 됩니다.</p><p>포지셔널 인코딩의 코드가 궁금하시다면 아래 링크를 통해 확인 가능합니다.</p><p><a href="https://github.com/jalammar/jalammar.github.io/blob/master/notebookes/transformer/transformer_positional_encoding_graph.ipynb" title="positional encoding">positional encoding 코드</a>  </p><h2 id="Attention-self-attention"><a href="#Attention-self-attention" class="headerlink" title="Attention(self-attention)"></a>Attention(self-attention)</h2><p>위에서 구한 input값을 self_attention의 input값으로 넣어줍니다.<br>그 후 이 input으로 3종류의 vector를 만들어 사용합니다.</p><p>그 벡터들은 <code>Query</code>, <code>Key</code>, <code>Value</code>라 부르는데 각각의 의미는 다음과 같습니다.</p><pre><code>Query : 현재 보고 있는 단어의 대표 값(기준점)Key   : 단어의 label과 같은 역할을 하는 값Value : 실제 단어의 값</code></pre><p>이 Q, K, V를 구하기 위해서는 앞에서 구한 <code>input vector</code>에 weight matrix를 곱하여 얻게 됩니다.</p><img width="700" alt="attention의 q,k,v를 얻는 과정" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/8bdbc042-8820-471e-b412-be4838be19db"><p>위의 사진을 통해 보면 $X_1$, $X_2$가 <code>input vector</code>고 $W^Q$, $W^K$, $W^V$ 가 weight matrix로 학습을 통해 구해야할 파라미터입니다.</p><p>예를 들어 Query중 $q_1$을 구하기 위해서는 $X_1 \cdot W^Q$를 연산하여 구할 수 있습니다.</p><p>일반적으로 Q,K,V의 dim을 적게 잡는 편입니다. 이유는 나중에 이 self-attention을 여러번 연산하는 Multi-headed attention의 관점에서 보면, 이 연산된 q,k,v 를 concat하기 때문입니다.(ex. 64(dim) * 8(heads) &#x3D;&#x3D; 512dim)</p><p>그렇다면, 여기서 attention이 진행되는 과정과 의미가 어떻게 되는지 알아보겠습니다.</p><img width="700" alt="어텐션의 메커니즘" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/ecc392cb-17de-4e57-a3ea-33eae6610867"><ol><li>위의 사진을 보면 먼저 score를 구합니다($q_1 \cdot k_1$)</li><li>그 후 $\sqrt {dim_k}$ 만큼 나눠줍니다. 여기서는 64차원이기 때문에 $\sqrt{64} &#x3D; 8$ 으로 나눠줍니다.</li><li>나눠진 스코어값을 softmax를 취해 값을 얻습니다.</li><li>이렇게 나온 스코어값(0.88)이랑 $v_1$이랑 곱하여 <code>$v_1$</code>을 얻고, 두 번째 인풋 $x_2$값과 연산하여 나온 스코어값(0.12)랑 $v_2$랑 곱하여 <code>$v_2$</code>를 얻게되고(흐릿한 $v_2$) </li><li>최종적으로 인풋($x_1$)에 대한 output값인 <code>$z_1$</code>값을 두 개의 값을 더하여 얻게됩니다, ($v_1 + v_2 &#x3D; z_1$)</li></ol>]]></content:encoded>
       
       
       <category domain="http://InhwanCho.github.io/categories/Paper/">Paper</category>
@@ -31,7 +31,7 @@
       <category domain="http://InhwanCho.github.io/tags/paper/">paper</category>
       
       
-      <comments>http://inhwancho.github.io/2023/08/03/Paper_Review/2023-07-16-test%20copy/#disqus_thread</comments>
+      <comments>http://inhwancho.github.io/2023/08/03/Paper_Review/2023-08-09-transformer/#disqus_thread</comments>
       
     </item>
     
@@ -281,11 +281,11 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
+      <category domain="http://InhwanCho.github.io/tags/study/">study</category>
+      
       <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
       <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/study/">study</category>
       
       <category domain="http://InhwanCho.github.io/tags/face-recognition/">face_recognition</category>
       
@@ -483,6 +483,31 @@
     </item>
     
     <item>
+      <title>OpenCV 기초</title>
+      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</link>
+      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</guid>
+      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="OpenCV-이미지-확인"><a href="#OpenCV-이미지-확인" class="headerlink" title="OpenCV 이미지 확인"></a>OpenCV 이미지 확인</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line"><span class="comment"># imread로 이미지 읽어오기</span></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># imshow(&#x27;이미지 표시 이름&#x27;,이미지파일)입력</span></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,img)</span><br><span class="line">waitKey(<span class="number">0</span>) <span class="comment">#(0을 넣으면 == 계속 딜레이 - 대기하라는 의미)</span></span><br></pre></td></tr></table></figure><ul><li>imshow의 앞 ‘output’이름으로 img 파일이 출력됩니다.</li><li>사진, 영상을 끄려면 키보드 <code>q</code>를 누르시면 됩니다.</li></ul><img width="1026" alt="이미지 결과" src="https://user-images.githubusercontent.com/111936229/211715668-3db417b0-b1ff-4eaa-9173-73241c8cf7e5.png"><h2 id="내장-카메라-웹캠-실행"><a href="#내장-카메라-웹캠-실행" class="headerlink" title="내장 카메라(웹캠) 실행"></a>내장 카메라(웹캠) 실행</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="comment"># 웹캠</span></span><br><span class="line">cap = cv2.VideoCapture(<span class="number">0</span>) <span class="comment">#노트북은 0번이 기본 내장 웹캠</span></span><br><span class="line"></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">3</span>,<span class="number">640</span>) <span class="comment">#id_nubmer, width</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">4</span>,<span class="number">480</span>) <span class="comment">#id_number, height</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">10</span>,<span class="number">100</span>) <span class="comment">#id_number,bright</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 웹캠은 프레임 단위로 계속 출력되기 때문에 일반적으로 while문으로 실행한다.</span></span><br><span class="line"><span class="comment"># 키보드 &#x27;q&#x27;버튼을 누르면 실행이 종료됩니다.</span></span><br><span class="line"><span class="comment"># success는 Ture,False이고, img는 프레임 단위의 이미지로 저장되는 형태이다.</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    success, img = cap.read()</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;video_mp4&#x27;</span>, img)</span><br><span class="line">    <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure><ul><li>실행 결과</li></ul><img width="705" alt="웹캠 결과" src="https://user-images.githubusercontent.com/111936229/212514462-86cdbf15-6286-4151-9a76-55a2e15c7cad.png"><h2 id="이미지-저장"><a href="#이미지-저장" class="headerlink" title="이미지 저장"></a>이미지 저장</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">loaded_img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line">cv2.imwrite(<span class="string">&#x27;folder/folder1/img.jpg&#x27;</span>,loaded_img)</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>OpenCV에 관한 정보</title>
       <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
       <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
@@ -506,31 +531,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>OpenCV 기초</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="OpenCV-이미지-확인"><a href="#OpenCV-이미지-확인" class="headerlink" title="OpenCV 이미지 확인"></a>OpenCV 이미지 확인</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line"><span class="comment"># imread로 이미지 읽어오기</span></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># imshow(&#x27;이미지 표시 이름&#x27;,이미지파일)입력</span></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,img)</span><br><span class="line">waitKey(<span class="number">0</span>) <span class="comment">#(0을 넣으면 == 계속 딜레이 - 대기하라는 의미)</span></span><br></pre></td></tr></table></figure><ul><li>imshow의 앞 ‘output’이름으로 img 파일이 출력됩니다.</li><li>사진, 영상을 끄려면 키보드 <code>q</code>를 누르시면 됩니다.</li></ul><img width="1026" alt="이미지 결과" src="https://user-images.githubusercontent.com/111936229/211715668-3db417b0-b1ff-4eaa-9173-73241c8cf7e5.png"><h2 id="내장-카메라-웹캠-실행"><a href="#내장-카메라-웹캠-실행" class="headerlink" title="내장 카메라(웹캠) 실행"></a>내장 카메라(웹캠) 실행</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="comment"># 웹캠</span></span><br><span class="line">cap = cv2.VideoCapture(<span class="number">0</span>) <span class="comment">#노트북은 0번이 기본 내장 웹캠</span></span><br><span class="line"></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">3</span>,<span class="number">640</span>) <span class="comment">#id_nubmer, width</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">4</span>,<span class="number">480</span>) <span class="comment">#id_number, height</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">10</span>,<span class="number">100</span>) <span class="comment">#id_number,bright</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 웹캠은 프레임 단위로 계속 출력되기 때문에 일반적으로 while문으로 실행한다.</span></span><br><span class="line"><span class="comment"># 키보드 &#x27;q&#x27;버튼을 누르면 실행이 종료됩니다.</span></span><br><span class="line"><span class="comment"># success는 Ture,False이고, img는 프레임 단위의 이미지로 저장되는 형태이다.</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    success, img = cap.read()</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;video_mp4&#x27;</span>, img)</span><br><span class="line">    <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure><ul><li>실행 결과</li></ul><img width="705" alt="웹캠 결과" src="https://user-images.githubusercontent.com/111936229/212514462-86cdbf15-6286-4151-9a76-55a2e15c7cad.png"><h2 id="이미지-저장"><a href="#이미지-저장" class="headerlink" title="이미지 저장"></a>이미지 저장</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">loaded_img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line">cv2.imwrite(<span class="string">&#x27;folder/folder1/img.jpg&#x27;</span>,loaded_img)</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/#disqus_thread</comments>
       
     </item>
     
@@ -575,13 +575,13 @@
       <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
       
       
+      <category domain="http://InhwanCho.github.io/tags/reshape/">reshape</category>
+      
       <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
       
       <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
       
       <category domain="http://InhwanCho.github.io/tags/shape/">shape</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/reshape/">reshape</category>
       
       <category domain="http://InhwanCho.github.io/tags/resize/">resize</category>
       
