@@ -9,8 +9,60 @@
     <atom:link href="http://inhwancho.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I&#39;m Learning ML/DL</description>
-    <pubDate>Wed, 09 Aug 2023 15:00:00 GMT</pubDate>
+    <pubDate>Sun, 13 Aug 2023 15:00:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Seq2Seq</title>
+      <link>http://inhwancho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-RNN/</link>
+      <guid>http://inhwancho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-RNN/</guid>
+      <pubDate>Sun, 13 Aug 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h3 id="참고-자료"><a href="#참고-자료" class="headerlink" title="참고 자료"></a>참고 자료</h3><p><a href="https://www.youtube.com/watch?v=mFhiGKI3LZM&list=PLBiQZMT3oSxV3RxoFgNcUNV4R7AlvUMDx&index=7&t=2791s" title="수원대 유튜브">수원대 유튜브</a>  </p><p><a href="http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/" title="jay alammar blog">Jay Alammar 자료</a></p><h2 id="Seq2Seq2-시퀀스-투-시퀀스"><a href="#Seq2Seq2-시퀀스-투-시퀀스" class="headerlink" title="Seq2Seq2(시퀀스 투 시퀀스)"></a>Seq2Seq2(시퀀스 투 시퀀스)</h2><p>seq2seq는 이름 그대로 sequence(시계얼 데이터)에서 sequence(시계얼 데이터)로 보내는 방법입니다.</p><pre><code>ex) 나는 학생이다 -&gt; I am a student</code></pre><p>seq2seq의 <code>구조는 Encoder와 Decoder로 구성</code>되어있습니다.</p><h2 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h2><p>Encoder에서는 문장을 입력 받아서 Context vector(&#x3D;hidden state)를 생성합니다.</p><p>그림으로 보면 다음과 같습니다.</p><img width="900" alt="seq2seq" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/4641dd5c-1d1f-45a3-8c42-c6821102d860"><p>Encoder는 Embedding층과 LSTM층으로 구성되있고, 보통의 신경망에서의 위로 올라가는 <code>Affine 층</code>은 여기서는 사용하지 않고, <code>Cell state</code>는 마지막 embedding까지 사용하고 <code>폐기</code>하며, <code>Hidden state만 최종적으로 출력</code>한다(이를 <code>context vecotr</code>라 부름)</p><p>이 최종 Hidden state는 하이퍼 파라미터이며, 어찌되었건 이는 길이이며, 이 고정 길이 안에서 입력 문장을 번역하는데 필요한 정보를 인코딩하는게 encoder의 목적입니다.</p><ul><li><code>[인코더 - 컨텍스트백터(hidden state) - 디코더]</code>로 이루어져 있고</li><li>seq2seq는 인코더와 디코더 아키텍처의 내부는 사실 <code>두 개의 RNN 구조</code>로 이루어진 모델</li><li>시퀀스-투-시퀀스(Sequence-to-Sequence, seq2seq)는 챗봇과 기계 번역에서 많이 사용됩니다.</li><li>대략적인 구조는 <code>입력 시퀀스</code>(질문)와 <code>출력 시퀀스</code>(대답)으로 이루어져 있습니다.</li></ul><h3 id="Decoder"><a href="#Decoder" class="headerlink" title="Decoder"></a>Decoder</h3><img width="700" alt="디코더" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/0b62e21b-7fb8-4076-8401-3bda9dcc0677"><p>디코더에서는 그림과 같이 진행됩니다.</p><p><code>embedding값</code>과 <code>hidden state인 context vector</code>가 LSTM으로 연산됩니다. </p><p>자세히 살펴보면 &lt;end of sentence&gt;를 input data로 사용하여 hidden state와 연산한 값을 Affine과 softmax를 통해 <code>I</code> 인 출력값을 얻습니다. 그 <code>I</code>가 다음 input으로 들어와서 반복합니다</p><ul><li>아래 동영상을 보시면 쉽게 이해될 것입니다(10초)</li></ul><video controls width="800">    <source src="/assets/videos/seq2seq.mp4" type="video/mp4"></video>   <h2 id="seq2seq의-한계점"><a href="#seq2seq의-한계점" class="headerlink" title="seq2seq의 한계점"></a>seq2seq의 한계점</h2><ul><li><p>항상 고정된 크기의 벡터에(컨텍스트 벡터) 모든 정보를 저장하기 때문에 bottle neck현상이 발생하여 정보 손실이 발생한다.</p></li><li><p>입력의 길이가 길어지면 기울기 소실 문제가 발생한다.<br><br>(context vector를 기준으로 Encoder, Decoder가 완전히 분리되어 있으므로 입출력의 연관 관계가 너무 떨어져 있어서 역전파 시 기울기 소실 발생)</p></li><li><p>결국은 RNN계열 대신 Attention을 사용하게 됨</p></li></ul>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/NLP/">NLP</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/NLP/">NLP</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/seq2seq/">seq2seq</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-RNN/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>RNN &amp; LSTM</title>
+      <link>http://inhwancho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-seq2seq/</link>
+      <guid>http://inhwancho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-seq2seq/</guid>
+      <pubDate>Sun, 13 Aug 2023 15:00:00 GMT</pubDate>
+      
+      <description>Click to read more in detail</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h3 id="참고-자료"><a href="#참고-자료" class="headerlink" title="참고 자료"></a>참고 자료</h3><p><a href="https://www.youtube.com/watch?v=mFhiGKI3LZM&list=PLBiQZMT3oSxV3RxoFgNcUNV4R7AlvUMDx&index=7&t=2791s" title="수원대 유튜브">수원대 유튜브</a><br><a href="https://wikidocs.net/152773" title="위키 독스">Wiki docs</a>  </p><h2 id="CBOW-Continuous-Bag-of-Words"><a href="#CBOW-Continuous-Bag-of-Words" class="headerlink" title="CBOW(Continuous Bag of Words)"></a>CBOW(Continuous Bag of Words)</h2><p>자연어 분야에서 초창기에는 <code>Continuous Bag of Words(CBOW)</code>이라는 word2vec을 사용하였습니다. CBOW는 주변 단어(Context Word) 중간에 있는 단어를 예측하는 방법입니다. </p><ol><li>그러나 단어 집합의 크기가 수 백만 이상에 달하면 코스트가 큰 무거운 작업이 되고,</li><li>문장이 길어지면 뒤의 문장에 대한 답을 제대로 할 수 없고,</li><li>맥락 안의 단어 순서가 무시되기 때문에 (ex. [you,say], [say,you]의 행렬곱 층을 거쳐서 평균하면 값이 동일하다)</li></ol><h2 id="RNN-Recurrent-Neural-Network"><a href="#RNN-Recurrent-Neural-Network" class="headerlink" title="RNN(Recurrent Neural Network)"></a>RNN(Recurrent Neural Network)</h2><p>RNN은 순환 신경망(Recurrent Neural Network, RNN)이라고 합니다.<br>RNN은 은닉층의 노드에서 활성화 함수를 통해 나온 결과값을 출력층 방향으로도 보내면서, 다시 은닉층 노드의 다음 계산의 입력으로 보내는 특징을 갖고있습니다.</p><img width="800" alt="RNN" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/95b26b07-4c80-4d61-98c6-b7fa728826a9"><p>$X_0$ 일때, Affine 변환을 거쳐서 hidden layer에 들어가게 되고 activation을 하면 $h_0$가 출력이 되고 바로 옆의 $X_1$로도 그 값을 넘겨주는 식으로 진행이 됩니다. </p><p>최근의 정보가 더 많이 남아있고, 먼 과거의 정보는 적게 남아있기는 하지만 값들이 작더라도 계속 남아있습니다.</p><p>참고로 RNN 계열의 활성화 함수는 <code>하이퍼볼릭 탄젠트(tanh)</code>를 사용합니다. </p><h2 id="LSTM-Long-Short-Term-Memory"><a href="#LSTM-Long-Short-Term-Memory" class="headerlink" title="LSTM(Long Short Term Memory)"></a>LSTM(Long Short Term Memory)</h2><p>기존의 RNN(Vanilla RNN)은 성능이 좋지 않기 때문에 보통 RNN이라고 하면 LSTM이나 GRU 등을 의미합니다.</p><p>LSTM은 기존의 RNN이 출력과 먼 위치에 있는 정보를 기억할 수 없다는 단점(기울기 소실, 기울기 폭주의 문제)을 보완하여 장&#x2F;단기 기억을 가능하게 설계한 신경망의 구조입니다.</p><pre><code>기울기 소실 : 활성화 함수를 tanh를 사용하기 때문에 그 값이 0~1인 값이기 때문에 계속 계산(곱)하다보면 기울기 소실이 됩니다.기울기 폭주 : 계속 곱하다가 큰 값이 되어 결국 발산되는 현상.</code></pre><img width="650" alt="RNN" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/ff0114e8-75b7-45dd-ab59-c6759099ba37"><img width="650" alt="LSTM" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/08bd154a-1715-4d16-8d3d-77ac137db277"><p>먼저 <code>RNN</code>의 구조와 <code>LSTM</code>의 구조를 비교 해보겠습니다. </p><p><code>LSTM</code>은 RNN과 같이 체인 구조를 가지고 있지만, 4개의 Layer가 특별한 방식으로 서로 정보를 주고 받도록 되어있습니다.</p><p>그럼 자세히 분석해보겠습니다.</p><img width="400" alt="cell state" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/7af23d7d-2e52-485e-82c9-37bc1dd8fb87"><p>LSTM은 <code>Cell State</code>와 <code>Hidden State</code>가 있습니다.</p><p><code>Cell State</code>는 LSTM의 핵심으로 정보가 전혀 바뀌지 않고 그대로만 흐르게 하는 부분입니다. 또한 꽤 경과하더라도 기울기가가 잘 전파 됩니다. 그리고 Gate(게이트)라는 구조에 의해서 정보가 추가되거나 제거 되며, 이 게이트는 어떤 정보를 유지하고 버릴지 학습합니다.</p><p>그리고 3개의 게이트가 있습니다. 이 게이트 모두 <code>시그모이드</code> 사용합니다.</p><p>위의 그림 중 <code>시그마</code>($\sigma$)가 보이는 부분이 모두 게이트입니다.</p><p>이 3개의 게이트는 <code>Forget Gate</code>, <code>Input Gate</code>, <code>Output Gate</code>라고 불립니다.</p><h3 id="Forget-Gate"><a href="#Forget-Gate" class="headerlink" title="Forget Gate"></a>Forget Gate</h3><img width="400" alt="Forget Gate" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/8e14e76c-3ce4-46df-8ff7-df0e686cdc5e"><p>이름 그대로 <code>과거의 정보를 얼마나 버릴지 결정</code>하는 게이트입니다. 수식은 다음과 같습니다. </p><p>$$f_t &#x3D; \sigma (W_f\cdot [h_{t-1},x_t]+b_f)$$</p><p>input embedding값인 x_t와 전 단계의 hidden_state($h_{t-1}$)와의 affine연산을 시그모이드를 통해 0~1사이의 값으로 나와서 1이면 모든 정보를 수용하고, 0이되면 모든 정보는 버리는 식이 됩니다.</p><h3 id="Input-Gate"><a href="#Input-Gate" class="headerlink" title="Input Gate"></a>Input Gate</h3><img width="400" alt="Input Gate" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/1945d1f1-fed4-4335-a220-c83836c0c8a5"><p>$$i_t &#x3D; \sigma (W_i\cdot [h_{t-1},x_t]+b_i)$$<br>$$\tilde C_t &#x3D; tanh(W_C\cdot [h_{t-1},x_t + b_C)$$</p><p>이 게이트는 현재 정보를 기억하기 위한 게이트 입니다. 현재의 <code>Cell state 에 무엇을 얼마나 더할지 말지를 결정</code>합니다.</p><img width="400" alt="cell state의 업데이트" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/91f91fd9-4118-490c-9b35-111869ac712d"><p>앞의 Forget Gate와, Input Gate에서 얼마나 버릴지 더할지를 정했으므로 이 업데이트를 계산을 해서 Cell State로 업데이트를 해줍니다.</p><p>$$ C_t &#x3D; f_t \odot C_{t-1} + i_t \odot \tilde C_t $$</p><h3 id="Output-Gate"><a href="#Output-Gate" class="headerlink" title="Output Gate"></a>Output Gate</h3><img width="400" alt="Output Gate" src="https://github.com/InhwanCho/InhwanCho.github.io/assets/111936229/c226ef13-2e2b-4726-99cb-0a69542b6f71"><p>$$o_t &#x3D; \sigma (W_o\cdot [h_{t-1},x_t]+b_o)$$<br>$$h_t &#x3D; o_t \odot tanh{(C_t)} $$</p><p>새로운 cell state에서 <code>얼마나 hidden state로 출력할지 결정</code>하는 게이트입니다.</p><ul><li>$\odot$은 아다마르 곱으로 행렬곱이 아닌 단순 곱입니다.</li></ul><p>계산을 보면 무척 복잡해보이지만 여기에 규칙들이 있어서 동일한 규칙을 가진 것들끼리는 묶어줍니다.</p><p>$$ x_t\cdot W_x +h_{t-1}\cdot W_h + b $$</p><p>여기서 Weight이랑 bias는 행렬 속 행렬로 보면 됩니다.<br>(예를들어 아래와 같습니다.)</p><p>$$b &#x3D;&#x3D; [[b^f], [b^c], [b^i], [b^o]]$$</p>]]></content:encoded>
+      
+      
+      <category domain="http://InhwanCho.github.io/categories/NLP/">NLP</category>
+      
+      
+      <category domain="http://InhwanCho.github.io/tags/NLP/">NLP</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/RNN/">RNN</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/LSTM/">LSTM</category>
+      
+      
+      <comments>http://inhwancho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-seq2seq/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>GPT(Generative Pre-Training of Language Model)</title>
@@ -101,9 +153,9 @@
       <category domain="http://InhwanCho.github.io/categories/Paper/">Paper</category>
       
       
-      <category domain="http://InhwanCho.github.io/tags/paper/">paper</category>
-      
       <category domain="http://InhwanCho.github.io/tags/review/">review</category>
+      
+      <category domain="http://InhwanCho.github.io/tags/paper/">paper</category>
       
       <category domain="http://InhwanCho.github.io/tags/rcnn/">rcnn</category>
       
@@ -531,58 +583,6 @@
       
       
       <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-cv2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>OpenCV에 관한 정보</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><ul><li><p>openCV를 주피터 환경에서 실행 시 동영상이나 사진의 (<code>x</code>)버튼을 누르면 주피터가 먹통이 될 때가 많다.</p><ul><li>키보드 ‘q’를 눌러서 끄는걸 권장한다.</li></ul></li><li><p>맥북 주피터 환경에서는 (<code>x</code>)버튼이 없어서 아래 명령어를 입력해주면 꺼지기는 한다.(터미널을 종료해도 꺼짐)</p><ul><li>다만, 파이참이나 VScode를 활용해 <code>.py파일을 인터프리터로 실행하기를 권장</code>한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cv2.destroyAllWindows()</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br><span class="line">cv2.waitKey(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h2 id="인터프리터로-실행-시-경로-설정하기"><a href="#인터프리터로-실행-시-경로-설정하기" class="headerlink" title="인터프리터로 실행 시 경로 설정하기"></a>인터프리터로 실행 시 경로 설정하기</h2><ul><li>인터프리터 환경(터미널환경)에서 실행 시 주피터의 실행 경로와 다를 수 있기 때문에 경로를 수정해줘야 오류가 안나온다.<ul><li>VScode에서 경로를 확인, 수정하는 방법은 다음과 같다.</li><li>먼저, 주피터 노트북에서도 아래의 명령어를 입력하고 실행을 한다.</li><li>그 다음 py 파일에에도 같은 입력을 하고 저장 &amp; 실행을 한다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sys.executable)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 출력 결과</span></span><br><span class="line"><span class="comment"># &#x27;/opt/anaconda3/bin/python&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>VScode의 경우는 <ul><li><code>명령 팔레트</code>를 열고 (Shift + command + P) <code>Python: Select Interpreter</code>을 검색 &amp; 누른다.</li><li>제 경우는 <code>/opt/anaconda3/bin/python</code> 앞의 출력 결과(주피터)에 동일한 결과를 선택한다. </li><li>실행해서 잘 되는지 확인한다.</li></ul></li></ul>]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/path/">path</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>OpenCV 이미지 변환</title>
-      <link>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</link>
-      <guid>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</guid>
-      <pubDate>Tue, 10 Jan 2023 15:00:00 GMT</pubDate>
-      
-      <description>Click to read more in detail</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="Grayscale-GaussianBlur"><a href="#Grayscale-GaussianBlur" class="headerlink" title="Grayscale, GaussianBlur"></a>Grayscale, GaussianBlur</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"><span class="comment"># 컬러 -&gt; 흑백으로 변환</span></span><br><span class="line">imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line"><span class="comment"># ksize == kernel size이므로 홀수만 사용 가능, sigmaX는 블러 정도라고 생각하면 편하며,</span></span><br><span class="line"><span class="comment"># 보통 -3~3사이의 값을 사용</span></span><br><span class="line">imgBlur = cv2.GaussianBlur(imgGray, ksize=(<span class="number">7</span>,<span class="number">7</span>),sigmaX=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output&#x27;</span>,imgGray)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output2&#x27;</span>,imgBlur)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><ul><li>결과 imgGray</li></ul><img width="1020" alt="그레이 이미지" src="https://user-images.githubusercontent.com/111936229/211717325-d4d896f0-630b-4450-8977-a492fa691bd5.png"><ul><li>결과 imgBlur</li></ul><img width="1014" alt="blur 이미지" src="https://user-images.githubusercontent.com/111936229/211717481-1721d754-f9f4-4ef3-bf6d-ea4e4b041f3a.png"><h2 id="Canny-Dialation"><a href="#Canny-Dialation" class="headerlink" title="Canny, Dialation"></a>Canny, Dialation</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;cat_img.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line">imgCanny = cv2.Canny(img,<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>), np.uint8)</span><br><span class="line"><span class="comment"># iterations에 높은 수를 넣으면 윤곽선이 더 커집니다.</span></span><br><span class="line">imgDialation = cv2.dilate(imgCanny, kernel=kernel,iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">imgEroded = cv2.erode(imgDialation, kernel=kernel, iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;output3&#x27;</span>,imgCanny)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output4&#x27;</span>,imgDialation)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;output5&#x27;</span>,imgEroded)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><ul><li>결과 imgCanny</li></ul><img width="1019" alt="Canny" src="https://user-images.githubusercontent.com/111936229/211718228-2469f803-60dd-4930-bf20-7c1111fa6378.png"><ul><li>결과 imgDialation</li></ul><img width="1021" alt="Dialation" src="https://user-images.githubusercontent.com/111936229/211718825-08992f1e-f210-491f-8b42-14c337b9c85c.png"><ul><li>결과 imgEroded</li></ul><img width="1023" alt="Eroede img" src="https://user-images.githubusercontent.com/111936229/211719388-c8fa40b9-a489-44b0-810d-bb201e9ed1fb.png">]]></content:encoded>
-      
-      
-      <category domain="http://InhwanCho.github.io/categories/OpenCV/">OpenCV</category>
-      
-      
-      <category domain="http://InhwanCho.github.io/tags/opencv/">opencv</category>
-      
-      <category domain="http://InhwanCho.github.io/tags/cv2/">cv2</category>
-      
-      
-      <comments>http://inhwancho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/#disqus_thread</comments>
       
     </item>
     

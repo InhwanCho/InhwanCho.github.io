@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>http://InhwanCho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-RNN/</loc>
+        <lastmod>2023-08-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/08/14/Study_folder/NLP(Natural_Language_Processing)/2023-08-14-seq2seq/</loc>
+        <lastmod>2023-08-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://InhwanCho.github.io/2023/08/10/Paper_Review/2023-08-10-GPT2/</loc>
         <lastmod>2023-08-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -481,7 +497,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-19-escape-sequence/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-18-Pillow/</loc>
         <lastmod>2022-12-17T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -489,7 +505,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-18-Pillow/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/18/Study_folder/Basic_study/2022-12-19-escape-sequence/</loc>
         <lastmod>2022-12-17T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -625,14 +641,6 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/07/Mac_Fundamental_Concept/2022-12-07-PATH(shell)/</loc>
-        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://InhwanCho.github.io/2022/12/10/Mac_Fundamental_Concept/2022-12-10-conda-env/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -641,7 +649,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-KoGPT2_chatbot/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/07/Mac_Fundamental_Concept/2022-12-07-PATH(shell)/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -650,6 +658,14 @@
 
     <url>
         <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-BERT_fine_intro/</loc>
+        <lastmod>2022-12-09T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/NLP(Natural_Language_Processing)/2022-12-10-KoGPT2_chatbot/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -849,7 +865,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-sample-codes/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -857,7 +873,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-sample-codes/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
