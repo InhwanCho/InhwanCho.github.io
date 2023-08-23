@@ -9,6 +9,38 @@
 
 
     <url>
+        <loc>http://InhwanCho.github.io/2023/08/24/Study_folder/LLM/2023-08-24-PromptE/</loc>
+        <lastmod>2023-08-23T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/08/23/Study_folder/LLM/2023-08-23-LLM/</loc>
+        <lastmod>2023-08-22T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/08/18/Study_folder/Pytorch/2023-08-18-dataset/</loc>
+        <lastmod>2023-08-17T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2023/08/18/Study_folder/Pytorch/2023-08-22-QnA(NLP)/</loc>
+        <lastmod>2023-08-17T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://InhwanCho.github.io/2023/08/15/Paper_Review/2023-08-15-BERT/</loc>
         <lastmod>2023-08-14T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -185,7 +217,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</loc>
         <lastmod>2023-01-10T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -193,7 +225,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-basic-tip-cv2/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/11/Study_folder/OpneCV/2023-01-11-img_change/</loc>
         <lastmod>2023-01-10T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -249,7 +281,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</loc>
         <lastmod>2023-01-07T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -257,7 +289,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/Pytorch/2023-01-08-boolean/</loc>
+        <loc>http://InhwanCho.github.io/2023/01/08/Study_folder/TensorFlow/2023-01-08-cast/</loc>
         <lastmod>2023-01-07T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -465,7 +497,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/21/Study_folder/TensorFlow/2022-12-21-img-resnetv2/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/21/Study_folder/TensorFlow/2022-12-21-Auto-encoder(AE)/</loc>
         <lastmod>2022-12-20T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -473,7 +505,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/21/Study_folder/TensorFlow/2022-12-21-Auto-encoder(AE)/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/21/Study_folder/TensorFlow/2022-12-21-img-resnetv2/</loc>
         <lastmod>2022-12-20T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -537,14 +569,6 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/TensorFlow/2022-12-15-img-generator/</loc>
-        <lastmod>2022-12-14T15:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/Pytorch/2022-12-15-dif-tran-alb/</loc>
         <lastmod>2022-12-14T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -553,8 +577,8 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/14/Mac_Fundamental_Concept/2022-12-14-Mac-basic/</loc>
-        <lastmod>2022-12-13T15:00:00.000Z</lastmod>
+        <loc>http://InhwanCho.github.io/2022/12/15/Study_folder/TensorFlow/2022-12-15-img-generator/</loc>
+        <lastmod>2022-12-14T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -569,7 +593,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/14/Study_folder/Basic_study/2022-12-14-magic-command/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/14/Mac_Fundamental_Concept/2022-12-14-Mac-basic/</loc>
         <lastmod>2022-12-13T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -578,6 +602,14 @@
 
     <url>
         <loc>http://InhwanCho.github.io/2022/12/03/Study_folder/Basic_study/2022-12-03-ZipFile/</loc>
+        <lastmod>2022-12-13T15:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://InhwanCho.github.io/2022/12/14/Study_folder/Basic_study/2022-12-14-magic-command/</loc>
         <lastmod>2022-12-13T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -601,7 +633,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/TensorFlow/2022-12-12-deep_CNN/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Pytorch/2022-12-12-nn(CNN)/</loc>
         <lastmod>2022-12-11T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -609,7 +641,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/Pytorch/2022-12-12-nn(CNN)/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/12/Study_folder/TensorFlow/2022-12-12-deep_CNN/</loc>
         <lastmod>2022-12-11T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -649,7 +681,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/07/Mac_Fundamental_Concept/2022-12-07-PATH(shell)/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/10/Mac_Fundamental_Concept/2022-12-10-conda-env/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -657,7 +689,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Mac_Fundamental_Concept/2022-12-10-conda-env/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/07/Mac_Fundamental_Concept/2022-12-07-PATH(shell)/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -681,7 +713,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/Pytorch/2022-12-10-pytorch-GPU/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/Pytorch/2022-12-10-Dataloader/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -689,7 +721,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/Pytorch/2022-12-10-Dataloader/</loc>
+        <loc>http://InhwanCho.github.io/2022/12/10/Study_folder/Pytorch/2022-12-10-pytorch-GPU/</loc>
         <lastmod>2022-12-09T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -865,7 +897,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-sample-codes/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -873,7 +905,7 @@
     </url>
 
     <url>
-        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-dacon-codereview/</loc>
+        <loc>http://InhwanCho.github.io/2022/11/20/Personal_folder/2022-11-20-sample-codes/</loc>
         <lastmod>2022-11-19T15:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
